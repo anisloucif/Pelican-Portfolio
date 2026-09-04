@@ -2,7 +2,7 @@ Title: Parcours scolaire
 
 # Présentation de mon parcours scolaire
 
-Après un bac **STI2D** spécialité **SIN** (**S**ystèmes d'**I**nformations & **N**umérique) j'avais la volonté de poursuivre dans le domaine de l'informatique. Après m'être renseigné, j'avais recensé les poursuites d'études suivantes dans le domaine de l'informatique :
+Titulaire d'un Baccalauréat Professionnel en **Gestion-Administration** obtenu avec la mention "Bien" en 2022, j'ai initialement poursuivi mes études en intégrant le BTS **Gestion de la PME**(GPME). Aptès avoir validé ma première année, j'ai pris la décision d'interrompre cette formation en décembre 2023, au coursj'avais la volonté de poursuivre dans le domaine de l'informatique. Après m'être renseigné, j'avais recensé les poursuites d'études suivantes dans le domaine de l'informatique :
 
 
 
