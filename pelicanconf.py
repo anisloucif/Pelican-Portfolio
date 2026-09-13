@@ -17,7 +17,7 @@ from datetime import datetime
 
 SITENAME = 'Portfolio BTS SIO SLAM'
 SITESUBTITLE = "Mon parcours de formation"
-AUTHOR = 'John DOE'
+AUTHOR = 'Anis LOUCIF'
 SITEURL = "" # Est surchargé par l'url du serveur dans le fichier publishconf.py
 TIMEZONE = 'Europe/Rome'
 DEFAULT_LANG = 'fr'
@@ -94,8 +94,7 @@ MENUITEMS = (
         "Consultez les articles de veille technologique que j’ai suivis durant cette année.", "warning"
     ),
 
-    ("Engagement", "/pages/engagement-etudiant", "people-fill", None, "Présention de mon engagement étudiant.", None),    # Optionnel
-
+    
 )
 
 MAINITEMS = MENUITEMS[1:4] # Récupération de PARCOURS, REALISATION & VEILLE pour afficage dans index.html

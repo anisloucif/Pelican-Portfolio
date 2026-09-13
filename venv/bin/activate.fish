@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV '/home/moi/Documents/Portfolio Anis LOUCIF/Portfolio-sio/venv'
+set -gx VIRTUAL_ENV /Users/anis/Documents/Pelican-Portfolio/venv
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/"bin $PATH

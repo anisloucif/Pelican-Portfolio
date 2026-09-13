@@ -1,66 +1,70 @@
-# Jean DUPONT
+# Anis LOUCIF
 Étudiant en BTS SIO – Option SLAM  
-📍 Lyon, France  
-📧 jean.dupont@example.com | 📱 06 12 34 56 78  
-💼 [LinkedIn](https://www.linkedin.com/in/jeandupont) | 🌐 [Portfolio](https://jeandupont-portfolio.fr)
+📍 Paris, France  
+📧 anis.loucif91@gmail.com | 📱 06 32 79 99 18  
+💼 [LinkedIn](https://www.linkedin.com/in/anis-loucif) | 🌐 [Portfolio](https://anisloucif.github.io/Pelican-Portfolio/)
 
 ---
 
 ## 🎯 Objectif
-Passionné par le développement logiciel et les technologies web, je souhaite mettre mes compétences en programmation et en conception d’applications au service d’une entreprise innovante, tout en poursuivant mes études vers un Bachelor en informatique.
+Après une réorientation vers l'informatique, je prépare un BTS SIO option SLAM au lycée Léonard de Vinci. Je souhaite consolider mes compétences en développement et poursuivre mon parcours vers une Licence Professionnelle à l'issue du BTS.
 
 ---
 
 ## 🎓 Formation
-**BTS Services Informatiques aux Organisations (SIO) – Option SLAM**  
-Lycée des Métiers de l’Informatique, Lyon  
-*2023 – 2025*  
+**BTS Services Informatiques aux Organisations – Option SLAM**  
+Lycée Léonard de Vinci, Melun (77) — *2025 – 2027*
 
-**Baccalauréat Général – Spécialités Mathématiques et Numérique & Sciences Informatiques**  
-Lycée Jean Moulin, Lyon  
-*2020 – 2023* – Mention Bien  
+**BTS Gestion de la PME** (diplôme non validé)  
+Lycée François Truffaut (91) — *2022 – 2023*
+
+**Baccalauréat Professionnel Gestion-Administration** — Mention Bien  
+Lycée Paul Langevin (91) — *2019 – 2022*
 
 ---
 
 ## 💻 Compétences techniques
-- **Langages** : Python, Java, Kotlin, PHP, SQL, JavaScript/TypeScript  
-- **Frameworks** : Spring Boot, Django, Angular, Bootstrap  
-- **Bases de données** : MySQL, MariaDB, PostgreSQL  
-- **Outils** : Git/GitHub, Docker, Linux, VirtualBox  
-- **Méthodes** : UML, Merise, Agile/Scrum  
+- Pack Office
+- Cegid Retail (encaissement)
+- Utilisation de caisse informatisée
+- Outils de scan / PDA
+- Git / GitHub, Pelican, VS Code *(en cours d'acquisition via le BTS)*
 
 ---
 
-## 🛠️ Expériences
-**Stage – Développeur Web (8 semaines)**  
-Entreprise ABC Solutions, Lyon  
-*Mai – Juin 2024*  
-- Participation au développement d’une application web de gestion interne (Stack : Django + PostgreSQL).  
-- Création de modules CRUD pour la gestion des utilisateurs.  
-- Mise en place d’un système d’authentification sécurisé (JWT).  
+## 🛠️ Expériences professionnelles
+**Castorama, Villabé** — Équipier logistique, mars – mai 2025 (2 mois)
 
-**Projet scolaire – Application mobile “EuroCoasters”**  
-*2024*  
-- Application Android en Kotlin permettant de consulter et d’ajouter des avis sur des montagnes russes en Europe.  
-- Intégration d’une API REST et d’une base de données SQLite.  
+**DIERRE France, Les Ulis** — Préparateur de commandes, oct. – déc. 2024 (2 mois)
 
----
+**Keysight, Les Ulis** — Manutentionnaire, sept. – oct. 2024 (1 mois)
 
-## 🌍 Engagements
-- **Pompier volontaire** – SDIS 69 (depuis 2023).  
-- Participation au Club de Développement du lycée (organisation de hackathons).  
+**Elis, Brétigny-sur-Orge** — Manutentionnaire, juin 2024 (1 mois)
+
+**Missions courtes diverses** — Manutentionnaire, mars – mai 2024 (2 mois)
+
+**Adidas, Corbeil-Essonnes** — Hôte de caisse, mai 2024 (1 mois)
+
+**Home & Cook, Corbeil-Essonnes** — Hôte de caisse, mars – avril 2024 (1 mois)
+
+**CFI Technologies, Lisses** — Contrôleur qualité, mars 2024 (1 mois)
+
+**Amazon, Brétigny-sur-Orge** — Préparateur de commandes, août 2023 (1 mois)
+
+**B&M France, Viry-Châtillon** — Vendeur polyvalent, avril – juin 2021 (2 mois)
 
 ---
 
 ## 🌐 Langues
 - Français : langue maternelle  
-- Anglais : B2 – professionnel  
-- Espagnol : B1 – scolaire  
+- Arabe : courant  
+- Anglais : B2  
+- Espagnol : B1
 
 ---
 
-## 🎨 Centres d’intérêt
-- Développement d’applications open source  
-- Cybersécurité et cryptographie  
-- Sport (course à pied, natation)  
-- Engagement citoyen et associatif
+## 🎨 Centres d'intérêt
+- Développement d'applications open source
+- Cybersécurité et cryptographie
+- Sport (course à pied)
+- Jeux vidéo
