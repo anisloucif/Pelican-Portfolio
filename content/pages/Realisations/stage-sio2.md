@@ -13,11 +13,11 @@ Lead: Stage de 8 semaines du lundi 4 janvier au vendredi 26 février 2027. Reche
 
 ## Objectifs
 
-Mon stage de 1<sup>re</sup> année m'a formé à la **qualité logicielle** (tests, rapports d'anomalies) sans écrire de code sur l'application. Pour ce second stage, je vise une mission de **développement** :
+Mon stage de 1<sup>re</sup> année était surtout un stage d'observation : j'y ai découvert la **qualité logicielle** et Git, sans écrire de code sur l'application. Pour ce second stage, je vise une mission de **développement** :
 
 - concevoir et coder une fonctionnalité de bout en bout (interface, traitement, base de données) ;
 - travailler avec Git en équipe (branches, revues de code, messages de commit soignés) ;
-- tester ce que je développe avec la méthode acquise en 1<sup>re</sup> année.
+- tester ce que je développe en appliquant la démarche QA découverte en 1<sup>re</sup> année.
 
 <p><a href="{static}/downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" class="btn btn-primary btn-sm" target="_blank"><i class="bi bi-file-earmark-pdf"></i> Mon CV</a> <a href="{filename}/pages/contact.md" class="btn btn-outline-primary btn-sm"><i class="bi bi-envelope"></i> Me proposer un stage</a></p>
 

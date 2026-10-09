@@ -13,7 +13,7 @@ Je m'appelle **Anis LOUCIF**, j'ai 22 ans et j'habite à Grigny (91). Je suis en
 
 Mon parcours n'est pas linéaire : après un Bac Pro Gestion-Administration et une première année de BTS GPME, j'ai travaillé en intérim dans la logistique (Amazon, Dierre France, Castorama). C'est en utilisant au quotidien des outils numériques de gestion de stock que j'ai voulu passer de l'autre côté : **comprendre et construire les applications**, plutôt que seulement les utiliser. J'ai repris mes études en BTS SIO en septembre 2025.
 
-Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logicielle** (que j'ai découverte en stage) et les **outils d'IA** appliqués au développement, sujet de ma veille technologique.
+Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logicielle** (découverte pendant mon stage) et les **outils d'IA** appliqués au développement, sujet de ma veille technologique.
 
 </div>
 <div markdown="1" class="col-md-4">
@@ -52,8 +52,8 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 <span class="skill">Git / GitHub</span><span class="skill">Clés SSH</span><span class="skill">VS Code</span><span class="skill">Docker</span><span class="skill">Bootstrap 5</span><span class="skill">Pelican</span><span class="skill">Odoo</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
-<h4><i class="bi bi-bug"></i> Qualité logicielle (stage)</h4>
-<span class="skill">Tests fonctionnels</span><span class="skill">Rapports d'anomalies</span><span class="skill">Chrome / Firefox DevTools</span><span class="skill">Lighthouse</span><span class="skill">Logcat (Android Studio)</span>
+<h4><i class="bi bi-bug"></i> Qualité logicielle (découverte en stage)</h4>
+<span class="skill">Rapports d'anomalies</span><span class="skill">Priorisation des bugs</span><span class="skill">Chrome / Firefox DevTools</span><span class="skill">Lighthouse</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-pc-display"></i> Systèmes</h4>
@@ -69,7 +69,7 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 
 <ul class="timeline">
 <li><span class="when">Janv. - fév. 2027</span><br><strong>Stage de 2<sup>e</sup> année</strong> (8 semaines), recherche en cours</li>
-<li><span class="when">Mai - juin 2026</span><br><strong>Stage de 1<sup>re</sup> année</strong>, tests et qualité logicielle sur l'application ButeurIA (web, Android, iOS). <a href="{filename}/pages/Realisations/stage-sio1.md">Voir le rapport</a></li>
+<li><span class="when">Mai - juin 2026</span><br><strong>Stage de 1<sup>re</sup> année</strong>, stage d'observation à distance : découverte de la qualité logicielle sur l'application ButeurIA (web et mobile), Git / GitHub / SSH. <a href="{filename}/pages/Realisations/stage-sio1.md">Voir le rapport</a></li>
 <li><span class="when">Depuis sept. 2025</span><br><strong>BTS SIO option SLAM</strong>, lycée Léonard de Vinci (Melun)</li>
 <li><span class="when">2023 - 2025</span><br><strong>Missions d'intérim en logistique</strong> : Amazon (Brétigny-sur-Orge), Dierre France (Les Ulis), Castorama (Villabé). Gestion de stock informatisée, inventaires, Excel</li>
 <li><span class="when">2022 - 2023</span><br><strong>1<sup>re</sup> année de BTS GPME</strong> validée, lycée François Truffaut (Bondoufle)</li>

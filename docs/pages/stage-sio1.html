@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio BTS SIO SLAM d'Anis LOUCIF - Lycée Léonard de Vinci (Melun)">
     <meta name="author" content="Anis LOUCIF">
-    <title>Stage de 1re année : tests et qualité logicielle sur ButeurIA | Anis LOUCIF - BTS SIO SLAM</title>
+    <title>Stage de 1re année : découverte de la qualité logicielle sur ButeurIA | Anis LOUCIF - BTS SIO SLAM</title>
 
     <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png">
@@ -99,14 +99,14 @@
     <main class="container site-main">
 <article class="page-sheet">
     <header class="page-head">
-<p class="kicker">Réalisations · Stage SIO1</p>        <h1>Stage de 1re année : tests et qualité logicielle sur ButeurIA</h1>
-<p class="lead-text">Six semaines de stage à distance, du 18 mai au 26 juin 2026 : campagnes de tests (QA) sur une application SaaS web et mobile, puis observation d'un projet d'orchestration d'agents IA.</p>    </header>
+<p class="kicker">Réalisations · Stage SIO1</p>        <h1>Stage de 1re année : découverte de la qualité logicielle sur ButeurIA</h1>
+<p class="lead-text">Six semaines de stage à distance, du 18 mai au 26 juin 2026 : découverte de la démarche de tests (QA) sur une application SaaS web et mobile, puis observation d'un projet d'orchestration d'agents IA.</p>    </header>
     <div class="page-body">
         <div class="row g-4 mb-2">
 <div class="col-md-6">
 <dl class="id-card mb-0">
 <dt>Dates</dt><dd>Du 18 mai au 26 juin 2026 (6 semaines)</dd>
-<dt>Modalité</dt><dd>Stage à distance (télétravail), point quotidien le matin et débriefing le soir</dd>
+<dt>Modalité</dt><dd>Stage à distance (télétravail)</dd>
 <dt>Structure d'accueil</dt><dd>Éditeur de l'application <strong>ButeurIA</strong> (SaaS)</dd>
 </dl>
 </div>
@@ -114,7 +114,7 @@
 <dl class="id-card mb-0">
 <dt>Tuteur en entreprise</dt><dd>Thomas, développeur web</dd>
 <dt>Professeur référent</dt><dd>M. Dutilloy</dd>
-<dt>Missions</dt><dd>Phase 1 : tests fonctionnels et qualité logicielle<br>Phase 2 : observation et veille sur un projet SaaS d'agents IA</dd>
+<dt>Nature du stage</dt><dd>Stage d'observation et de découverte : qualité logicielle, outils de versioning, projet SaaS d'agents IA</dd>
 </dl>
 </div>
 </div>
@@ -122,102 +122,79 @@
 <p><strong>Sommaire</strong></p>
 <ol>
 <li><a href="#entreprise">Présentation de l'entreprise et du produit</a></li>
-<li><a href="#organisation">Organisation du travail et outils</a></li>
-<li><a href="#phase1">Phase 1 : campagnes de tests sur ButeurIA</a></li>
-<li><a href="#procedures">Procédures et tutoriels rédigés</a></li>
-<li><a href="#ameliorations">Propositions d'amélioration</a></li>
-<li><a href="#phase2">Phase 2 : observation d'un projet d'orchestration d'agents IA</a></li>
-<li><a href="#competences">Compétences du référentiel mobilisées</a></li>
-<li><a href="#bilan">Bilan du stage</a></li>
+<li><a href="#deroulement">Déroulement du stage</a></li>
+<li><a href="#qa">La démarche qualité (QA) que j'ai découverte</a></li>
+<li><a href="#git">Ce que j'ai pratiqué : Git, GitHub et SSH</a></li>
+<li><a href="#agents">Observation d'un projet d'orchestration d'agents IA</a></li>
+<li><a href="#competences">Compétences du référentiel abordées</a></li>
+<li><a href="#bilan">Bilan honnête du stage</a></li>
 </ol>
 </div>
 <h2 id="entreprise">1. Présentation de l'entreprise et du produit</h2>
 
-<p>La structure qui m'a accueilli développe et exploite <strong>ButeurIA</strong>, un <strong>SaaS de prédictions sportives propulsé par l'intelligence artificielle</strong>. L'application propose chaque jour des prédictions de buteurs pour les matchs de football, avec une offre gratuite et un abonnement <strong>Premium</strong> payé par carte via <strong>Stripe</strong>.</p>
-<p>ButeurIA est disponible sur <strong>trois plateformes</strong> :</p>
+<p>La structure qui m'a accueilli développe et exploite <strong>ButeurIA</strong>, un <strong>SaaS de prédictions sportives propulsé par l'intelligence artificielle</strong>. L'application propose des prédictions de buteurs pour les matchs de football, avec une offre gratuite et un abonnement <strong>Premium</strong> (paiement via <strong>Stripe</strong>).</p>
+<p>ButeurIA est disponible sur <strong>trois plateformes</strong> : le <strong>web</strong> (navigateur) et les applications mobiles <strong>Android</strong> et <strong>iOS</strong>.</p>
+<p>L'équipe prépare aussi un <strong>second produit SaaS</strong>, encore en pré-lancement : une <strong>plateforme d'orchestration d'agents IA</strong> pour les TPE et PME, qui connecte plusieurs intelligences artificielles aux outils du quotidien (voir <a href="#agents">partie 5</a>).</p>
+<h2 id="deroulement">2. Déroulement du stage</h2>
+
+<p>Le stage s'est déroulé <strong>entièrement à distance</strong>, en deux temps :</p>
 <table>
 <thead>
 <tr>
-<th>Plateforme</th>
-<th>Accès</th>
-<th>Points à tester</th>
+<th>Période</th>
+<th>Contenu</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Web</td>
-<td>Navigateur (Chrome, Firefox, Safari)</td>
-<td>Inscription, connexion, tableau de bord, prédictions, paiement</td>
+<td>18 mai - 5 juin</td>
+<td>Découverte de l'application ButeurIA et de la <strong>démarche de tests (QA)</strong> utilisée par l'équipe</td>
 </tr>
 <tr>
-<td>Android</td>
-<td>Application mobile (Play Store)</td>
-<td>Lancement, notifications push, navigation native, mode hors-ligne</td>
-</tr>
-<tr>
-<td>iOS</td>
-<td>Application mobile (App Store)</td>
-<td>Inscription, clavier, partage natif, permissions</td>
+<td>6 - 26 juin</td>
+<td><strong>Observation</strong> d'un nouveau projet SaaS d'orchestration d'agents IA, et veille technologique sur le sujet</td>
 </tr>
 </tbody>
 </table>
-<p>En parallèle, l'équipe prépare un <strong>second produit SaaS</strong>, encore en phase de pré-lancement : une <strong>plateforme d'orchestration d'agents IA</strong> destinée aux TPE et PME, qui connecte plusieurs intelligences artificielles aux outils du quotidien pour améliorer la productivité des collaborateurs (voir <a href="#phase2">phase 2</a>).</p>
-<h2 id="organisation">2. Organisation du travail et outils</h2>
+<p>Le code de ButeurIA est complexe et l'application est en production : une erreur de manipulation aurait pu affecter de vrais utilisateurs. Je n'ai donc <strong>pas développé</strong> sur l'application. Mon tuteur m'a montré son fonctionnement et la façon dont l'équipe suit sa qualité.</p>
+<h2 id="qa">3. La démarche qualité (QA) que j'ai découverte</h2>
 
-<p>Le stage s'est déroulé <strong>entièrement à distance</strong>. La journée était rythmée par :</p>
-<ul>
-<li>un <strong>point du matin</strong> avec le tuteur, pour fixer les parcours à tester ;</li>
-<li>une <strong>journée de tests</strong>, avec la saisie de chaque anomalie dans le tableau de suivi ;</li>
-<li>un <strong>débriefing du soir</strong>, pour relire les anomalies, les prioriser et noter dans le journal de bord ce que j'avais appris et ce qui m'avait bloqué.</li>
-</ul>
+<h3>3.1 Le document de suivi QA de l'équipe</h3>
+<p>L'équipe suit la qualité de ButeurIA dans un <strong>tableau de suivi</strong>, qui m'a été fourni par mon tuteur. Je l'ai étudié pour comprendre comment on organise des tests. Il comporte quatre onglets :</p>
 <table>
 <thead>
 <tr>
-<th>Outil</th>
-<th>Usage pendant le stage</th>
+<th>Onglet</th>
+<th>Rôle</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Chrome DevTools / Firefox DevTools</td>
-<td>Lire les erreurs JavaScript (onglet <em>Console</em>) et les codes HTTP (onglet <em>Network</em>), simuler une connexion lente</td>
+<td>Bugs &amp; QA</td>
+<td>Une ligne par anomalie : titre, type, gravité, plateforme, écran, étapes pour reproduire, résultat attendu, résultat obtenu, statut</td>
 </tr>
 <tr>
-<td>Lighthouse</td>
-<td>Auditer les performances et l'accessibilité de la page d'accueil</td>
+<td>Idées &amp; Améliorations</td>
+<td>Propositions d'évolution avec leur impact et leur difficulté estimés</td>
 </tr>
 <tr>
-<td>Android Studio (Logcat)</td>
-<td>Lire les journaux de l'application Android lors d'un crash</td>
+<td>Journal de bord</td>
+<td>Suivi quotidien : ce qui a été fait, appris, ce qui a bloqué et comment</td>
 </tr>
 <tr>
-<td>Tableur (Excel)</td>
-<td>Tableau de suivi QA : anomalies, idées d'amélioration, journal de bord, synthèse automatique</td>
-</tr>
-<tr>
-<td>Loom / Notion</td>
-<td>Enregistrement vidéo des bugs, prise de notes</td>
-</tr>
-<tr>
-<td>Git / GitHub</td>
-<td>Découverte du versioning : clés SSH, branches, messages de commit</td>
+<td>Synthèse</td>
+<td>Indicateurs calculés automatiquement par formules (<code>NB.SI</code>) : nombre d'anomalies par gravité, par statut…</td>
 </tr>
 </tbody>
 </table>
-<div class="capture">
-<p><i class="bi bi-image"></i>Capture d'écran : vue d'ensemble du tableau de suivi QA (onglet « Bugs &amp; QA »)</p>
-</div>
-<h2 id="phase1">3. Phase 1 : campagnes de tests sur ButeurIA (18 mai - 5 juin)</h2>
-
-<h3>3.1 Démarche</h3>
-<p>J'ai testé l'application <strong>parcours par parcours</strong> : inscription, connexion et mot de passe oublié, consultation des prédictions (filtres, tri, recherche), compte utilisateur, paiement Premium, puis les spécificités mobiles. Pour chaque parcours, je testais d'abord le cas normal, puis les <strong>cas limites</strong> : champ vide, espaces avant ou après un email, mot de passe de 3 caractères, accents (« Mbappé »), noms d'équipe très longs, connexion coupée, etc.</p>
-<p>Chaque anomalie est classée par <strong>type</strong> et par <strong>gravité</strong> :</p>
+<p>À la fin de la période étudiée, le tableau recensait <strong>48 retours</strong> (32 bugs, 11 améliorations d'ergonomie, 4 problèmes de performance, 1 faute d'orthographe), dont <strong>6 bloquants</strong>.</p>
+<h3>3.2 Comment on classe une anomalie</h3>
 <table>
 <thead>
 <tr>
 <th>Gravité</th>
-<th>Définition retenue</th>
-<th>Exemple</th>
+<th>Définition</th>
+<th>Exemple tiré du tableau</th>
 </tr>
 </thead>
 <tbody>
@@ -228,230 +205,65 @@
 </tr>
 <tr>
 <td><span class="sev-m">Majeur</span></td>
-<td>Le parcours fonctionne mal ou induit l'utilisateur en erreur</td>
+<td>Le parcours fonctionne mal ou induit en erreur</td>
 <td>Aucun message si l'email est déjà utilisé</td>
 </tr>
 <tr>
 <td>Mineur</td>
-<td>Gêne l'utilisateur sans bloquer</td>
+<td>Gêne sans bloquer</td>
 <td>Pas d'indicateur de chargement</td>
 </tr>
 <tr>
 <td>Cosmétique</td>
-<td>Défaut visuel ou de texte</td>
+<td>Défaut visuel</td>
 <td>Avatar carré au lieu de rond sur Firefox</td>
 </tr>
 </tbody>
 </table>
-<h3>3.2 Résultats chiffrés</h3>
-<div class="row g-3 text-center my-3">
-<div class="col-6 col-md-3">
-<div class="stat">
-<p><span class="stat-num">48</span><span class="stat-lbl">retours QA documentés</span></p>
-</div>
-</div>
-<div class="col-6 col-md-3">
-<div class="stat">
-<p><span class="stat-num">6</span><span class="stat-lbl">anomalies bloquantes</span></p>
-</div>
-</div>
-<div class="col-6 col-md-3">
-<div class="stat">
-<p><span class="stat-num">15</span><span class="stat-lbl">anomalies majeures</span></p>
-</div>
-</div>
-<div class="col-6 col-md-3">
-<div class="stat">
-<p><span class="stat-num">14</span><span class="stat-lbl">corrigées pendant le stage</span></p>
-</div>
-</div>
-</div>
-<table>
-<thead>
-<tr>
-<th>Répartition par type</th>
-<th>Nombre</th>
-<th></th>
-<th>Répartition par plateforme</th>
-<th>Nombre</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bugs</td>
-<td>32</td>
-<td></td>
-<td>Web (Chrome)</td>
-<td>31</td>
-</tr>
-<tr>
-<td>Améliorations UX</td>
-<td>11</td>
-<td></td>
-<td>Android</td>
-<td>9</td>
-</tr>
-<tr>
-<td>Performance</td>
-<td>4</td>
-<td></td>
-<td>iOS</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Faute d'orthographe</td>
-<td>1</td>
-<td></td>
-<td>Web (Firefox / Safari)</td>
-<td>3</td>
-</tr>
-</tbody>
-</table>
-<p>À la fin de la phase 1 : <strong>14 anomalies corrigées</strong> par l'équipe, <strong>8 en cours de correction</strong> et <strong>26 nouvelles</strong> transmises pour la suite.</p>
-<h3>3.3 Les 6 anomalies bloquantes</h3>
-<table>
-<thead>
-<tr>
-<th>N°</th>
-<th>Plateforme</th>
-<th>Anomalie</th>
-<th>Statut</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>3</td>
-<td>iOS</td>
-<td>Le bouton « S'inscrire » reste figé, sans réaction visuelle</td>
-<td><span class="sev-ok">Corrigé</span></td>
-</tr>
-<tr>
-<td>7</td>
-<td>Web Firefox</td>
-<td>« Mot de passe oublié » mène à une page blanche (erreur 500)</td>
-<td><span class="sev-ok">Corrigé</span></td>
-</tr>
-<tr>
-<td>15</td>
-<td>Web</td>
-<td>« Souscrire Premium » renvoie une 404 (<code>/checkout/premium</code> inexistant)</td>
-<td><span class="sev-ok">Corrigé</span></td>
-</tr>
-<tr>
-<td>18</td>
-<td>Android</td>
-<td>Notifications push reçues à 4 h du matin</td>
-<td>En cours</td>
-</tr>
-<tr>
-<td>26</td>
-<td>Android</td>
-<td>Crash au lancement après la mise à jour 1.4.2 (Android 11 et 12)</td>
-<td>En cours</td>
-</tr>
-<tr>
-<td>34</td>
-<td>Web</td>
-<td>Page de paiement Stripe affichant les prix en dollars au lieu d'euros</td>
-<td>En cours</td>
-</tr>
-</tbody>
-</table>
-<h3>3.4 Trois anomalies analysées en détail</h3>
-<h4>Anomalie n°3 : bouton « S'inscrire » figé sur iOS (bloquant)</h4>
-<table>
-<thead>
-<tr>
-<th>Rubrique</th>
-<th>Contenu</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Environnement</td>
-<td>iPhone, iOS 17.4, application mobile</td>
-</tr>
-<tr>
-<td>Étapes</td>
-<td>1. Ouvrir l'app &rarr; 2. « Créer un compte » &rarr; 3. Remplir tous les champs &rarr; 4. Appuyer sur « S'inscrire »</td>
-</tr>
-<tr>
-<td>Attendu</td>
-<td>Création du compte puis redirection vers l'accueil</td>
-</tr>
-<tr>
-<td>Obtenu</td>
-<td>Rien ne se passe, aucun retour visuel</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Difficulté :</strong> le bug était <strong>intermittent</strong> (environ une fois sur trois).
-<strong>Méthode :</strong> j'ai refait le test <strong>10 fois</strong> en notant à chaque essai les valeurs saisies. Le bug n'apparaissait qu'avec un <strong>mot de passe contenant un caractère spécial</strong>. Cette précision a permis au développeur de cibler rapidement la cause. Statut : corrigé.</p>
-<div class="capture">
-<p><i class="bi bi-image"></i>Capture d'écran : fiche de l'anomalie n°3 dans le tableau de suivi</p>
-</div>
-<h4>Anomalie n°13 : accents cassés (« Vin?cius J?nior ») (majeur)</h4>
-<p>Sur la page Prédictions, certains noms de joueurs s'affichaient avec des <code>?</code> à la place des lettres accentuées. En comparant les noms cassés et les noms corrects, et en m'appuyant sur la documentation MDN sur les jeux de caractères (<em>charset</em>), j'ai compris qu'il s'agissait d'un <strong>problème d'encodage côté serveur</strong> (données non transmises en UTF-8) et non d'un problème d'affichage. Extrait de ce que j'ai vérifié dans l'onglet <em>Network</em> :</p>
-<div class="highlight"><pre><span></span><code><span class="err"># En-tête attendu dans la réponse de l&#39;API</span>
-<span class="err">Content-Type: application/json; charset=utf-8</span>
-</code></pre></div>
-
-<p>Statut : corrigé par l'équipe.</p>
-<h4>Anomalie n°34 : prix en USD sur la page de paiement Stripe (bloquant)</h4>
-<p>En cliquant sur « Souscrire Premium », la page de paiement affichait les prix en <strong>dollars</strong> pour un utilisateur français. Pour vérifier que cela ne dépendait pas de ma localisation, j'ai <strong>refait le test avec un VPN réglé sur la France puis sur les États-Unis</strong>, et consulté la documentation Stripe sur la gestion des devises. Conclusion transmise au tuteur : la devise dépend de la <strong>configuration du compte / des prix côté Stripe</strong>, pas du navigateur. Statut : correction en cours.</p>
-<h2 id="procedures">4. Procédures et tutoriels rédigés</h2>
-
-<h3>4.1 Modèle de rapport d'anomalie</h3>
-<p>C'est le modèle que j'ai utilisé pour chaque ligne du tableau de suivi :</p>
-<div class="highlight"><pre><span></span><code>N°            : 13
-Date          : 26/05/2026
-Titre         : Nom de joueur &#39;Vinícius Júnior&#39; affiché avec ??? au lieu des accents
+<p>Ce que j'en ai retenu : <strong>un bug sur le paiement passe avant un défaut d'affichage</strong>. On priorise selon l'impact sur l'utilisateur et sur l'entreprise.</p>
+<h3>3.3 Comment on rédige un rapport d'anomalie</h3>
+<p>Exemple de fiche, tirée du tableau :</p>
+<div class="highlight"><pre><span></span><code>Titre         : Nom de joueur &#39;Vinícius Júnior&#39; affiché avec ??? au lieu des accents
 Type          : Bug              Gravité : Majeur
 Plateforme    : Web Chrome       Écran    : Page Prédictions
 Étapes        : 1. Filtrer par Real Madrid
                 2. Regarder la carte de Vinícius
 Attendu       : Accents corrects (Vinícius Júnior)
 Obtenu        : Encodage cassé : &#39;Vin?cius J?nior&#39;
-Statut        : Nouveau -&gt; En cours fix -&gt; Corrigé
+Statut        : Nouveau -&gt; En cours de correction -&gt; Corrigé
 </code></pre></div>
 
-<p>Règles que j'ai appliquées : <strong>un seul problème par fiche</strong>, des étapes <strong>reproductibles par quelqu'un d'autre</strong>, l'<strong>environnement exact</strong> (navigateur, version d'iOS ou d'Android) et une capture ou une vidéo Loom.</p>
-<h3>4.2 Auditer une page avec Lighthouse</h3>
-<ol>
-<li>Ouvrir la page dans Chrome, puis <code>F12</code> &rarr; onglet <strong>Lighthouse</strong>.</li>
-<li>Choisir le mode <strong>Navigation</strong>, l'appareil <strong>Mobile</strong> et les catégories <em>Performance</em> et <em>Accessibility</em>.</li>
-<li>Dans les réglages, garder la <strong>limitation réseau simulée</strong> (connexion mobile lente).</li>
-<li>Cliquer sur <strong>Analyze page load</strong> et relever les scores et les métriques Web Vitals (LCP, CLS…).</li>
-</ol>
-<p>Résultats obtenus sur ButeurIA : <strong>Performance 38/100</strong> sur la page d'accueil (images non optimisées, JavaScript bloquant, anomalie n°21) et <strong>contraste de 2,3:1</strong> sur les boutons secondaires, sous le minimum WCAG AA de 4,5:1 (anomalie n°47).</p>
-<div class="capture">
-<p><i class="bi bi-image"></i>Capture d'écran : rapport Lighthouse de la page d'accueil</p>
-</div>
-<h3>4.3 Simuler une connexion 3G avec les DevTools</h3>
-<ol>
-<li><code>F12</code> &rarr; onglet <strong>Network</strong>.</li>
-<li>Dans la liste déroulante de limitation (<em>No throttling</em>), choisir <strong>3G</strong>.</li>
-<li>Cocher <strong>Disable cache</strong>, puis recharger avec <code>Ctrl + Maj + R</code> (<code>Cmd + Maj + R</code> sur Mac).</li>
-<li>Lire le temps de chargement complet en bas de l'onglet (<em>Load</em>).</li>
-</ol>
-<p>Résultat : <strong>8,3 secondes</strong> pour charger l'accueil, contre un objectif de moins de 5 secondes (anomalie n°36).</p>
-<h3>4.4 Lire les journaux d'un crash Android (Logcat)</h3>
-<ol>
-<li>Activer les <strong>options pour les développeurs</strong> sur le téléphone, puis le <strong>débogage USB</strong>.</li>
-<li>Brancher le téléphone, ouvrir <strong>Android Studio</strong> &rarr; onglet <strong>Logcat</strong>.</li>
-<li>Sélectionner l'appareil, puis filtrer les erreurs de l'application :</li>
-</ol>
-<div class="highlight"><pre><span></span><code>package:mine level:error
+<p>Les règles d'une bonne fiche : <strong>un seul problème par fiche</strong>, des étapes <strong>reproductibles par quelqu'un d'autre</strong>, l'<strong>environnement exact</strong> (navigateur, système) et une preuve (capture ou vidéo).</p>
+<p>Cet exemple m'a aussi fait découvrir la notion d'<strong>encodage des caractères</strong> : les accents s'affichent mal quand les données ne sont pas transmises en <strong>UTF-8</strong>. Cela se vérifie dans l'en-tête de la réponse du serveur :</p>
+<div class="highlight"><pre><span></span><code><span class="err">Content-Type: application/json; charset=utf-8</span>
 </code></pre></div>
 
-<ol>
-<li>Lancer l'application et relever la pile d'erreur (<em>stack trace</em>) affichée au moment du crash pour la joindre à la fiche (anomalie n°26 : crash après la mise à jour 1.4.2).</li>
-</ol>
-<div class="capture">
-<p><i class="bi bi-image"></i>Capture d'écran : Logcat au moment du crash</p>
-</div>
-<h3>4.5 Configurer Git et une clé SSH pour GitHub</h3>
-<p>Mon tuteur a cité Git et GitHub comme l'un de mes principaux apprentissages du stage. Voici la configuration que j'ai mise en place :</p>
+<h3>3.4 Les outils présentés</h3>
+<table>
+<thead>
+<tr>
+<th>Outil</th>
+<th>À quoi il sert</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Chrome / Firefox DevTools</td>
+<td>Voir les erreurs JavaScript (onglet <em>Console</em>) et les codes HTTP comme 404 ou 500 (onglet <em>Network</em>)</td>
+</tr>
+<tr>
+<td>Lighthouse (intégré à Chrome)</td>
+<td>Mesurer la performance et l'accessibilité d'une page</td>
+</tr>
+<tr>
+<td>Tableur</td>
+<td>Centraliser les anomalies et calculer des indicateurs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="git">4. Ce que j'ai pratiqué : Git, GitHub et SSH</h2>
+
+<p>Mon tuteur a cité Git et GitHub comme mon principal apprentissage du stage. Voici la configuration de base à mettre en place pour travailler avec GitHub en SSH :</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># Identité Git</span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">&quot;Anis LOUCIF&quot;</span>
 git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">&quot;anis.loucif91@gmail.com&quot;</span>
@@ -461,152 +273,83 @@ ssh-keygen<span class="w"> </span>-t<span class="w"> </span>ed25519<span class="
 <span class="nb">eval</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>ssh-agent<span class="w"> </span>-s<span class="k">)</span><span class="s2">&quot;</span>
 ssh-add<span class="w"> </span>~/.ssh/id_ed25519
 
-<span class="c1"># Copier la clé publique, puis la coller dans GitHub &gt; Settings &gt; SSH and GPG keys</span>
+<span class="c1"># Afficher la clé publique pour l&#39;ajouter dans GitHub &gt; Settings &gt; SSH and GPG keys</span>
 cat<span class="w"> </span>~/.ssh/id_ed25519.pub
 
 <span class="c1"># Tester la connexion</span>
 ssh<span class="w"> </span>-T<span class="w"> </span>git@github.com
 </code></pre></div>
 
-<p>Travail avec les branches :</p>
+<p>Travailler avec des branches :</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>switch<span class="w"> </span>-c<span class="w"> </span>docs/rapport-stage<span class="w">     </span><span class="c1"># créer une branche dédiée</span>
 git<span class="w"> </span>add<span class="w"> </span>.
 git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;docs: ajout du rapport de stage SIO1&quot;</span>
 git<span class="w"> </span>push<span class="w"> </span>-u<span class="w"> </span>origin<span class="w"> </span>docs/rapport-stage
-git<span class="w"> </span>switch<span class="w"> </span>master<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>merge<span class="w"> </span>docs/rapport-stage<span class="w">   </span><span class="c1"># fusion une fois validé</span>
+git<span class="w"> </span>switch<span class="w"> </span>main<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>git<span class="w"> </span>merge<span class="w"> </span>docs/rapport-stage<span class="w">   </span><span class="c1"># fusion une fois validé</span>
 </code></pre></div>
 
-<p>Un des axes de progrès relevés par mon tuteur était <strong>la rigueur des messages de commit</strong>. J'utilise depuis une convention simple : <code>type: description courte</code>, avec <code>fix</code>, <code>feat</code>, <code>docs</code> ou <code>style</code> comme type.</p>
-<h2 id="ameliorations">5. Propositions d'amélioration</h2>
+<p>Un axe de progrès relevé par mon tuteur était <strong>la rigueur des messages de commit</strong>. J'utilise depuis une convention simple : <code>type: description courte</code> (<code>fix</code>, <code>feat</code>, <code>docs</code>, <code>style</code>).</p>
+<h2 id="agents">5. Observation d'un projet d'orchestration d'agents IA</h2>
 
-<p>En plus des anomalies, j'ai proposé <strong>16 idées d'amélioration</strong>, chacune évaluée par son impact estimé et sa difficulté. Ma sélection :</p>
-<table>
-<thead>
-<tr>
-<th>Idée</th>
-<th>Catégorie</th>
-<th>Impact</th>
-<th>Difficulté</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bouton « Copier le lien » sur les prédictions</td>
-<td>UX</td>
-<td>Fort</td>
-<td>Facile</td>
-</tr>
-<tr>
-<td>Partage WhatsApp (canal principal pour les pronostics entre amis)</td>
-<td>Fonctionnalité</td>
-<td>Fort</td>
-<td>Facile</td>
-</tr>
-<tr>
-<td>Onboarding en 3 écrans au premier lancement</td>
-<td>UX</td>
-<td>Fort</td>
-<td>Moyen</td>
-</tr>
-<tr>
-<td>Page « Comment marche notre IA » (transparence, taux de réussite)</td>
-<td>Marketing</td>
-<td>Fort</td>
-<td>Moyen</td>
-</tr>
-<tr>
-<td>Mode sombre automatique (<code>prefers-color-scheme</code>)</td>
-<td>UX</td>
-<td>Moyen</td>
-<td>Facile</td>
-</tr>
-<tr>
-<td>FAQ dans le pied de page pour réduire les emails au support</td>
-<td>UX</td>
-<td>Moyen</td>
-<td>Facile</td>
-</tr>
-</tbody>
-</table>
-<p>Mon tuteur a souligné que j'étais <strong>force de proposition</strong>.</p>
-<h2 id="phase2">6. Phase 2 : observation d'un projet d'orchestration d'agents IA (6 - 26 juin)</h2>
-
-<p>Pendant la seconde phase, j'ai suivi en <strong>observation</strong> un nouveau projet SaaS de l'équipe : une plateforme qui permet aux <strong>TPE et PME</strong> de connecter plusieurs intelligences artificielles (des « agents ») à leurs outils du quotidien.</p>
-<p>Le projet étant <strong>sensible et encore en pré-lancement</strong>, je n'ai pas participé au développement. J'ai pu :</p>
+<p>Pendant la seconde partie du stage, j'ai suivi en <strong>observation</strong> un nouveau projet de l'équipe : une plateforme qui permet aux <strong>TPE et PME</strong> de connecter plusieurs intelligences artificielles (des « agents ») à leurs outils du quotidien.</p>
+<p>Le projet étant <strong>sensible et en pré-lancement</strong>, je n'ai pas participé au développement. Cette observation m'a fait comprendre :</p>
 <ul>
-<li>assister aux phases de <strong>conception</strong> et découvrir l'<strong>architecture technique générale</strong> d'un produit IA ;</li>
-<li>comprendre les <strong>enjeux</strong> d'un produit IA en entreprise : fiabilité des réponses, sécurité des données, coût d'utilisation des modèles ;</li>
-<li>mener une <strong>veille technologique</strong> sur les agents IA et les protocoles qui leur permettent de se connecter aux outils (MCP, A2A).</li>
+<li>qu'un produit IA en entreprise pose des questions de <strong>fiabilité des réponses</strong>, de <strong>sécurité des données</strong> et de <strong>coût d'utilisation</strong> des modèles ;</li>
+<li>que les agents ont besoin de <strong>connecteurs standards</strong> pour accéder aux outils.</li>
 </ul>
-<p>Cette phase est à l'origine du sujet de <a href="../ma-veille.html">ma veille technologique</a>.</p>
-<h2 id="competences">7. Compétences du référentiel BTS SIO mobilisées</h2>
+<p>C'est ce qui m'a donné le sujet de <a href="../ma-veille.html">ma veille technologique</a> : les protocoles MCP et A2A.</p>
+<h2 id="competences">6. Compétences du référentiel abordées</h2>
 
 <table>
 <thead>
 <tr>
 <th>Bloc</th>
 <th>Compétence</th>
-<th>Mise en œuvre pendant le stage</th>
+<th>Comment je l'ai abordée</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Bloc 2 SLAM</td>
 <td>Assurer la maintenance corrective ou évolutive d'une solution applicative</td>
-<td>Recherche, reproduction et documentation de 48 anomalies, suivi de leur correction</td>
-</tr>
-<tr>
-<td>Bloc 2 SLAM</td>
-<td>Élaborer et réaliser les tests des éléments mis à jour</td>
-<td>Nouveau test des parcours après correction, mise à jour des statuts (« En cours » &rarr; « Corrigé »)</td>
+<td>Découverte du suivi des anomalies : classement, priorisation, statuts de correction</td>
 </tr>
 <tr>
 <td>Bloc 2 SLAM</td>
 <td>Évaluer la qualité d'une solution applicative</td>
-<td>Audits Lighthouse (performance, accessibilité), tests multi-navigateurs et multi-plateformes</td>
-</tr>
-<tr>
-<td>Bloc 1</td>
-<td>Répondre aux incidents et aux demandes d'assistance et d'évolution</td>
-<td>Qualification des incidents (type, gravité), propositions d'évolution</td>
+<td>Découverte des critères de gravité et d'outils comme Lighthouse et les DevTools</td>
 </tr>
 <tr>
 <td>Bloc 1</td>
 <td>Travailler en mode projet</td>
-<td>Point quotidien, priorisation des anomalies par criticité, synthèse finale avec le tuteur</td>
+<td>Observation de l'organisation d'une équipe produit et d'un projet en phase de conception</td>
 </tr>
 <tr>
 <td>Bloc 1</td>
 <td>Organiser son développement professionnel</td>
-<td>Journal de bord quotidien, apprentissage par la documentation (MDN, Chrome DevTools, Stripe), veille sur les agents IA</td>
-</tr>
-<tr>
-<td>Bloc 1</td>
-<td>Développer la présence en ligne de l'organisation</td>
-<td>Remarques SEO (CGU en PDF, page 404, temps de chargement)</td>
+<td>Apprentissage de Git, GitHub et SSH ; veille technologique sur les agents IA</td>
 </tr>
 </tbody>
 </table>
-<h2 id="bilan">8. Bilan du stage</h2>
+<h2 id="bilan">7. Bilan honnête du stage</h2>
 
 <h3>Appréciation du tuteur</h3>
 <blockquote>
-<p>« Anis s'est très bien intégré dès son arrivée. Il est sociable, à l'écoute, et n'hésite pas à poser des questions lorsqu'il rencontre une difficulté. […] Il a montré de réelles capacités d'apprentissage, notamment sur les outils de versioning (Git, GitHub, clés SSH, gestion de branches). Il est également force de proposition. »</p>
+<p>« Il a montré de réelles capacités d'apprentissage, notamment sur les outils de versioning (Git, GitHub, clés SSH, gestion de branches). »</p>
 </blockquote>
-<h3>Ce que j'ai appris</h3>
+<h3>Ce que j'en retiens</h3>
 <ul>
-<li><strong>Tester méthodiquement</strong> : cas normaux et cas limites, reproduction systématique, une fiche par problème.</li>
-<li><strong>Écrire pour être compris</strong> : un développeur doit pouvoir reproduire mon bug sans me poser de question.</li>
-<li><strong>Prioriser</strong> : un bug sur le paiement passe avant un défaut d'affichage.</li>
-<li><strong>Utiliser les outils du développeur</strong> : DevTools, Lighthouse, Logcat, Git avec SSH et les branches.</li>
+<li>J'ai découvert <strong>l'envers du décor d'une application en production</strong> : une application n'est pas seulement du code, il faut aussi la tester, suivre les anomalies et les prioriser.</li>
+<li>J'ai appris les <strong>bases de Git, GitHub et SSH</strong>, que j'utilise aujourd'hui pour mes projets et pour ce portfolio.</li>
+<li>J'ai trouvé mon <strong>sujet de veille</strong> : les agents IA en entreprise.</li>
 </ul>
-<h3>Axes de progrès (identifiés avec mon tuteur)</h3>
+<h3>Ce qui m'a manqué</h3>
+<p>Ce stage a été surtout un <strong>stage d'observation</strong>. À distance, et sur une application trop sensible pour un stagiaire de première année, j'ai peu pratiqué par moi-même. Je retiens deux axes de progrès, identifiés avec mon tuteur :</p>
 <ul>
-<li>Consulter la <strong>documentation officielle</strong> avant de demander de l'aide. Je l'ai appliqué pour Lighthouse, l'encodage et Stripe (voir le journal de bord).</li>
-<li>Être plus rigoureux dans les <strong>messages de commit</strong> et la <strong>documentation</strong>.</li>
+<li>chercher d'abord dans la <strong>documentation officielle</strong> avant de demander de l'aide ;</li>
+<li>être plus rigoureux dans les <strong>messages de commit</strong> et la <strong>documentation</strong>.</li>
 </ul>
-<h3>Limites et suite</h3>
-<p>Ce stage ne m'a pas fait coder sur l'application : le code de ButeurIA est complexe et en production, et une erreur de ma part aurait pu affecter les utilisateurs. En revanche, il m'a montré <strong>l'autre moitié du métier de développeur</strong> : la qualité, les tests et la relation avec l'équipe. Pour mon <strong>stage de 2<sup>e</sup> année</strong> (janvier-février 2027), je cherche une mission orientée <strong>développement</strong>, pour mettre en pratique ce que j'ai appris côté qualité.</p>
+<p>C'est pour cette raison que je cherche, pour mon <strong>stage de 2<sup>e</sup> année</strong> (janvier-février 2027), une mission où je <strong>développe réellement</strong>, dans une équipe où je peux coder et être relu.</p>
     </div>
 </article>
     </main>
