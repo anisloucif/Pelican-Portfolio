@@ -1,45 +1,16 @@
-{#
-_______________________________________________________________________________
-
-                            HEADER DU PORTFOLIO
-_______________________________________________________________________________
-#}
-
-<!-- -------- -->
-<!-- HEADER : -->
-<!-- -------- -->
-
-
-<header class="container-fluid py-2 background-header">
-
-<div class="container">
-    <div class="row">
-        <!-- Logo : -->
-        <div class="col-md-4 m-0 p-0 align-content-center text-center">
-            <a href="{{ SITEURL }}/" title="Page d'accueil" class="navbar-brand">
-                <img src="{{ SITEURL }}/theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
-            </a>
-        </div>
-
-        <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
-            <!-- Titre principal : -->
-            <h1 class="m-0 p-0 ">{{ SITENAME }}</h1>
-
-
-            <!-- Titre secondaire : -->
-            <p class="m-0 p-0">
-                <i>{% if SITESUBTITLE %}{{ SITESUBTITLE }}{% endif %}</i>
-            </p>
-
-        </div>
+{# HEADER + NAVBAR #}
+<header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+        <a href="{{ SITEURL }}/index.html" class="brand text-decoration-none" title="Accueil">
+            <span class="brand-mark">AL</span>
+            <span class="d-flex flex-column lh-sm">
+                <span class="brand-name">{{ AUTHOR }}</span>
+                <span class="brand-sub">BTS SIO option SLAM &middot; Lycée Léonard de Vinci</span>
+            </span>
+        </a>
+        <a href="{{ SITEURL }}/downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank" class="btn btn-sm btn-cv d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="bi bi-file-earmark-person"></i> Mon CV
+        </a>
     </div>
-
-</div>
-    
-</header>
-
-
-<!-- NAVBAR : -->
-<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
     {% include 'includes/navbar.html' %}
-</div>
+</header>

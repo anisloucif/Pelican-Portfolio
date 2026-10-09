@@ -1,184 +1,414 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projets scolaires</title>
-    
-    <!-- Favicons :-->
-    <link rel="icon" type="image/png" sizes="16x16" href="../theme/logo/favicon-16x16.png">
+    <meta name="description" content="Portfolio BTS SIO SLAM d'Anis LOUCIF - Lycée Léonard de Vinci (Melun)">
+    <meta name="author" content="Anis LOUCIF">
+    <title>Projets scolaires : ateliers professionnels de 1re année | Anis LOUCIF - BTS SIO SLAM</title>
+
     <link rel="icon" type="image/png" sizes="32x32" href="../theme/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="../theme/logo/favicon-48x48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="../theme/logo/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../theme/logo/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="../theme/logo/favicon-512x512.png">
     <link rel="shortcut icon" href="../theme/logo/favicon.ico">
-
-    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
-    
-    <!-- Bootstrap CSS : --> 
+<link rel="alternate" type="application/rss+xml" title="Veille technologique - Anis LOUCIF" href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml">
     <link rel="stylesheet" href="../theme/vendor/bootstrap/css/bootstrap.min.css">
-    
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="../theme/vendor/bootstrap-icons/bootstrap-icons.css">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="../theme/vendor/fontawesome/css/all.min.css">
-
-    
-    <!-- STYLES CSS PERSONNEL : -->   
     <link rel="stylesheet" href="../theme/css/custom.css">
-
 </head>
 
-<body class="m-0 p-0">
-    <!-- INCLUSION DU HEADER : -->
-
-<!-- -------- -->
-<!-- HEADER : -->
-<!-- -------- -->
-
-
-<header class="container-fluid py-2 background-header">
-
-<div class="container">
-    <div class="row">
-        <!-- Logo : -->
-        <div class="col-md-4 m-0 p-0 align-content-center text-center">
-            <a href="../" title="Page d'accueil" class="navbar-brand">
-                <img src="../theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
-            </a>
-        </div>
-
-        <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
-            <!-- Titre principal : -->
-            <h1 class="m-0 p-0 ">Portfolio BTS SIO SLAM</h1>
-
-
-            <!-- Titre secondaire : -->
-            <p class="m-0 p-0">
-                <i>Mon parcours de formation</i>
-            </p>
-
+<body>
+<header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+        <a href="../index.html" class="brand text-decoration-none" title="Accueil">
+            <span class="brand-mark">AL</span>
+            <span class="d-flex flex-column lh-sm">
+                <span class="brand-name">Anis LOUCIF</span>
+                <span class="brand-sub">BTS SIO option SLAM &middot; Lycée Léonard de Vinci</span>
+            </span>
+        </a>
+        <a href="../downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank" class="btn btn-sm btn-cv d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="bi bi-file-earmark-person"></i> Mon CV
+        </a>
+    </div>
+<nav class="navbar navbar-expand-md site-nav" data-bs-theme="dark">
+    <div class="container">
+        <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link  " title="Page d'accueil du portfolio"
+                       href="../index.html" >
+                        <i class="bi bi-house me-1"></i>Accueil
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" title="Qui je suis, mon CV, mon parcours scolaire et professionnel."
+                       href="../pages/parcours.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-vcard me-1"></i>Présentation
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../pages/parcours.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="../pages/parcours.html">Présentation & CV</a></li>
+                        <li><a class="dropdown-item " href="../pages/parcours-scolaire.html">Parcours scolaire</a></li>
+                        <li><a class="dropdown-item " href="../pages/bts-sio.html">Le BTS SIO</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" title="Mon stage, mes ateliers professionnels, mes projets et mes certifications."
+                       href="../pages/realisations.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-kanban me-1"></i>Réalisations
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../pages/realisations.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="../pages/stage-sio1.html">Stage de 1re année (ButeurIA)</a></li>
+                        <li><a class="dropdown-item " href="../pages/stage-sio2.html">Stage de 2e année</a></li>
+                        <li><a class="dropdown-item active" href="../pages/projets-scolaires.html">Projets scolaires (AP)</a></li>
+                        <li><a class="dropdown-item " href="../pages/projets-personnels.html">Projets personnels</a></li>
+                        <li><a class="dropdown-item " href="../pages/certifications-complementaires.html">Certifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" title="Ma veille sur les agents IA et leurs protocoles (MCP, A2A), avec flux RSS."
+                       href="../ma-veille.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-broadcast-pin me-1"></i>Veille techno.
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../ma-veille.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="../ma-veille.html">Sujet, méthode & outils</a></li>
+                        <li><a class="dropdown-item " href="../archives.html">Archive des articles</a></li>
+                        <li><a class="dropdown-item " href="../tags.html">Mots-clés</a></li>
+                        <li><a class="dropdown-item " href="../feeds/veille.rss.xml">Flux RSS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " title="Me contacter"
+                       href="../pages/contact.html" >
+                        <i class="bi bi-envelope me-1"></i>Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-
+</nav></header>
+    <main class="container site-main">
+<article class="page-sheet">
+    <header class="page-head">
+<p class="kicker">Réalisations · Ateliers professionnels (AP)</p>        <h1>Projets scolaires : ateliers professionnels de 1re année</h1>
+<p class="lead-text">Comptes rendus des deux ateliers professionnels réalisés en 1re année de BTS SIO : le site de l'Hôtel Chambord (front-end) et l'application Cinéma connectée à l'API TMDB (PHP).</p>    </header>
+    <div class="page-body">
+        <div class="row g-3 mb-4">
+<div class="col-md-6">
+<div class="info-card">
+<p class="kicker mb-1">AP · 1re année (déc. 2025)</p>
+<h3 class="h5"><a href="#ap1">Site web de l'Hôtel Chambord</a></h3>
+<p class="small mb-2">Site vitrine et espace de gestion d'un hôtel de luxe : 19 pages responsives.</p>
+<p><span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Bootstrap 5</span><span class="skill">JavaScript</span></p>
 </div>
-    
-</header>
-
-
-<!-- NAVBAR : -->
-<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
-
-
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
-
-            <!-- Bouton dévellopement menu en mode collapsé : -->
-            <div class="me-2">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <!-- Eléments de navigation : -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav nav-underline ms-4 ms-md-0  mb-md-0 mt-4 mt-md-0 fw-bold">
-                        
-                        
-                        <li class="nav-item ">
-                            <a  class="nav-link py-0 "
-                                title="Page d'accueil du portefolio"                                
-                                href="../index"
-                            >
-                            <i  class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Accueil
-                            </a>
-                            
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Découvrez mon parcours scolaire et professionnel."                                
-                                href="../pages/parcours"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Mon parcours
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../pages/parcours-scolaire">Parcours scolaire</a></li>
-                                        <li><a class="dropdown-item " href="../pages/bts-sio">Le BTS SIO</a></li>
-                                </ul> 
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0  active "
-                                title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels."                                
-                                href="../pages/realisations"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Réalisations
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../pages/tp-majeurs">TP majeurs</a></li>
-                                        <li><a class="dropdown-item " href="../pages/stage-sio1">Stage de 1ère année</a></li>
-                                        <li><a class="dropdown-item " href="../pages/stage-sio2">Stage de 2e année</a></li>
-                                        <li><a class="dropdown-item  active " href="../pages/projets-scolaires">Projets scolaires</a></li>
-                                        <li><a class="dropdown-item " href="../pages/projets-personnels">Projets personnels</a></li>
-                                        <li><a class="dropdown-item " href="../pages/certifications-complementaires">Certifications complémentaires</a></li>
-                                </ul> 
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Consultez les articles de veille technologique que j’ai suivis durant cette année."                                
-                                href="../ma-veille"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Veille techno.
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="../ma-veille">Ma veille technologique</a></li>
-                                        <li><a class="dropdown-item " href="../archives">Archive des articles</a></li>
-                                        <li><a class="dropdown-item " href="../categories">Liste des catégories</a></li>
-                                        <li><a class="dropdown-item " href="../authors">Liste des auteurs</a></li>
-                                        <li><a class="dropdown-item " href="../tags">Liste des mots clés</a></li>
-                                </ul> 
-                        </li>
-                </ul>
-
-            </div>            
-        </div>
-    </nav>     
 </div>
-    <main class="container mt-5 p-0 min-vh-100">
-        <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
+<div class="col-md-6">
+<div class="info-card">
+<p class="kicker mb-1">AP · 1re année (avril 2026)</p>
+<h3 class="h5"><a href="#ap2">Cinéma : application connectée à l'API TMDB</a></h3>
+<p class="small mb-2">Recherche de films et d'acteurs, fiche acteur avec filmographie, via une API REST.</p>
+<p><span class="skill">PHP 8</span><span class="skill">API REST</span><span class="skill">JSON</span><span class="skill">Bootstrap 5</span></p>
+</div>
+</div>
+</div>
+<h2 id="ap1">AP « Hôtel Chambord » : site web d'un hôtel de luxe</h2>
 
-  <!-- <h1>Projets scolaires</h1> -->
-  <p>Voici quelques projets réalisés durant mes deux années :</p>
+<p>
+<a href="https://anisloucif.github.io/AP3_hotel_chambord_anisloucif.github.io/" target="_blank" rel="noopener" class="btn btn-primary btn-sm"><i class="bi bi-globe"></i> Voir le site en ligne</a>
+<a href="https://github.com/anisloucif/AP3_hotel_chambord_anisloucif.github.io" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> Code source</a>
+</p>
+
+<h3>1. Contexte</h3>
+<p>L'<strong>Hôtel Chambord</strong> est un hôtel de luxe fictif, situé au cœur du domaine de Chambord, qui propose des chambres, un restaurant, un spa et des activités (golf, balades à vélo, montgolfière). L'établissement souhaite un <strong>site web</strong> pour présenter son offre, permettre aux clients de <strong>réserver</strong> et de le <strong>contacter</strong>, et disposer d'une <strong>partie d'administration</strong> pour son personnel (utilisateurs, services, offres d'emploi).</p>
+<h3>2. Cahier des charges (besoins traités)</h3>
+<table>
+<thead>
+<tr>
+<th>Besoin</th>
+<th>Réponse apportée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Présenter l'hôtel et ses services</td>
+<td>Pages Accueil, Chambres, Restaurant, Spa, Activités, Avis clients</td>
+</tr>
+<tr>
+<td>Permettre la réservation</td>
+<td>Page Réservation à onglets : chambre, table au restaurant, soin au spa</td>
+</tr>
+<tr>
+<td>Être contacté</td>
+<td>Page Contact avec formulaire (nom, prénom, email, sujet, message)</td>
+</tr>
+<tr>
+<td>Gérer les comptes clients</td>
+<td>Connexion, création de compte, mot de passe oublié, modification du compte</td>
+</tr>
+<tr>
+<td>Administrer le site</td>
+<td>Tableau d'administration, gestion des utilisateurs et des services, gestion du restaurant</td>
+</tr>
+<tr>
+<td>Recruter</td>
+<td>Page Recrutement (postes disponibles, candidature spontanée) et création d'offres d'emploi</td>
+</tr>
+<tr>
+<td>Être consultable sur mobile</td>
+<td>Mise en page responsive avec Bootstrap 5</td>
+</tr>
+<tr>
+<td>Gérer les erreurs</td>
+<td>Page 404 personnalisée</td>
+</tr>
+</tbody>
+</table>
+<h3>3. Solutions techniques adoptées</h3>
+<p><strong>Arborescence du projet :</strong></p>
+<div class="highlight"><pre><span></span><code>AP3_hotel_chambord/
+├── index.html                  # page d&#39;accueil
+├── css/
+│   ├── bootstrap.css           # framework Bootstrap 5 (local)
+│   ├── global.css              # styles communs (bandeaux, couleurs)
+│   └── recrutement.css         # styles propres à la page Recrutement
+├── js/
+│   ├── bootstrap.js            # composants Bootstrap (menu, onglets)
+│   └── main.js                 # animation d&#39;apparition des sections
+├── img/                        # photos (chambres, spa, restaurant…)
+└── pages/                      # 18 pages : chambres, reservation, admin, contact…
+</code></pre></div>
+
+<p><strong>Choix techniques :</strong></p>
 <ul>
-<li>Application de gestion de stages en Python/Django</li>
-<li>API REST de gestion de séries avec Spring Boot</li>
-<li>Portfolio personnel avec Pelican</li>
+<li><strong>Bootstrap 5 en local</strong> pour la grille responsive, la barre de navigation repliable (<code>navbar-expand-lg</code>), les cartes, les onglets de réservation et les formulaires (<code>form-control</code>, <code>form-select</code>).</li>
+<li><strong>Une classe CSS de bandeau par page</strong> (<code>.bandeau-bg-chambres</code>, <code>.bandeau-bg-restaurant</code>…) : une même structure HTML, une image de fond différente.</li>
+<li><strong>Formulaires HTML5 avec validation native</strong> (<code>required</code>, <code>type="email"</code>, <code>type="date"</code>) et des étiquettes <code>&lt;label for&gt;</code> reliées aux champs pour l'accessibilité.</li>
+<li><strong>Un peu de JavaScript</strong> pour faire apparaître les sections au défilement.</li>
 </ul>
-    
+<h3>4. Extraits de code</h3>
+<p>Bandeau de page réutilisable (<code>css/global.css</code>) :</p>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">bandeau-bg-chambres</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="k">background-image</span><span class="p">:</span><span class="w"> </span><span class="nb">url</span><span class="p">(</span><span class="s2">&quot;../img/chambre-1.jpg&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="k">background-size</span><span class="p">:</span><span class="w"> </span><span class="kc">cover</span><span class="p">;</span>
+<span class="w">  </span><span class="k">background-position</span><span class="p">:</span><span class="w"> </span><span class="kc">center</span><span class="p">;</span>
+<span class="w">  </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">  </span><span class="k">z-index</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
+<span class="w">  </span><span class="k">height</span><span class="p">:</span><span class="w"> </span><span class="mi">88</span><span class="kt">vh</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+<p>Formulaire de réservation d'une chambre (<code>pages/reservation.html</code>, extrait) :</p>
+<div class="highlight"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;row g-3&quot;</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;#&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">markdown</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-md-6&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;type-chambre&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span><span class="p">&gt;</span>Type de chambre<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;type-chambre&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;type-chambre&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-select&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span><span class="p">&gt;</span>Sélectionnez une chambre<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Cosy<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Cosy vue rivière<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>De luxe vue château<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">option</span><span class="p">&gt;</span>Suite vue château<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">div</span> <span class="na">markdown</span><span class="o">=</span><span class="s">&quot;1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;col-md-3&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;date-arrivee&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-label&quot;</span><span class="p">&gt;</span>Date d&#39;arrivée<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;date&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;date-arrivee&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;date-arrivee&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-control&quot;</span> <span class="na">required</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<p>Apparition des sections au défilement (<code>js/main.js</code>) :</p>
+<div class="highlight"><pre><span></span><code><span class="nb">document</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;DOMContentLoaded&quot;</span><span class="p">,</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="kd">const</span><span class="w"> </span><span class="nx">sections</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="s2">&quot;section&quot;</span><span class="p">);</span>
+
+<span class="w">  </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleScroll</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">sections</span><span class="p">.</span><span class="nx">forEach</span><span class="p">((</span><span class="nx">section</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="kd">const</span><span class="w"> </span><span class="nx">rect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">section</span><span class="p">.</span><span class="nx">getBoundingClientRect</span><span class="p">();</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">rect</span><span class="p">.</span><span class="nx">top</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="nb">window</span><span class="p">.</span><span class="nx">innerHeight</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="nx">rect</span><span class="p">.</span><span class="nx">bottom</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mf">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">section</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="s2">&quot;fade-in&quot;</span><span class="p">);</span><span class="w">   </span><span class="c1">// la section devient visible</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">});</span>
+<span class="w">  </span><span class="p">}</span>
+
+<span class="w">  </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s2">&quot;scroll&quot;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleScroll</span><span class="p">);</span>
+<span class="w">  </span><span class="nx">handleScroll</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div>
+
+<div class="capture">
+<p><i class="bi bi-image"></i>Capture d'écran : page d'accueil de l'Hôtel Chambord (ordinateur et mobile)</p>
+</div>
+<div class="capture">
+<p><i class="bi bi-image"></i>Capture d'écran : page Réservation (onglets chambre / restaurant / spa)</p>
+</div>
+<h3>5. Bilan</h3>
+<p><strong>Ce qui fonctionne :</strong> un site complet de <strong>19 pages</strong>, responsive, cohérent graphiquement et <strong>publié en ligne</strong> sur GitHub Pages.</p>
+<p><strong>Limites que j'ai identifiées :</strong></p>
+<ul>
+<li>Le site est <strong>uniquement front-end</strong> : les formulaires (réservation, contact, connexion) n'enregistrent rien. Ils pointent vers <code>action="#"</code> ou vers un <code>contact.php</code> qui n'existe pas encore.</li>
+<li>Les pages d'administration sont des <strong>maquettes</strong> : les tableaux d'utilisateurs et de services sont écrits en dur dans le HTML.</li>
+<li>Le projet a été déposé en <strong>un seul commit</strong>, sans historique Git du travail.</li>
+</ul>
+<p><strong>Améliorations prévues :</strong> ajouter un back-end <strong>PHP / MySQL</strong> (tables <code>client</code>, <code>reservation</code>, <code>chambre</code>, <code>service</code>), traiter les formulaires côté serveur avec des <strong>requêtes préparées (PDO)</strong>, protéger l'administration par une <strong>authentification avec sessions</strong> et un <strong>mot de passe haché</strong> (<code>password_hash</code>).</p>
+<p><strong>Compétences mobilisées :</strong> concevoir et développer une solution applicative (interfaces web), développer la présence en ligne de l'organisation, mettre à disposition un service (publication sur GitHub Pages).</p>
+<hr>
+<h2 id="ap2">AP « Cinéma » : application connectée à l'API TMDB</h2>
+
+<p>
+<a href="https://github.com/anisloucif/movie_api" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> Code source</a>
+</p>
+
+<h3>1. Contexte</h3>
+<p>Il s'agit de développer une <strong>application web de cinéma</strong> qui ne stocke aucune donnée elle-même : elle interroge l'<strong>API REST de The Movie Database (TMDB)</strong> pour afficher les films populaires, rechercher des films et des acteurs, et consulter la fiche d'un acteur. L'application doit fonctionner <strong>au lycée</strong>, derrière le proxy du réseau, <strong>et à la maison</strong>, sans proxy.</p>
+<h3>2. Cahier des charges (besoins traités)</h3>
+<table>
+<thead>
+<tr>
+<th>Besoin</th>
+<th>Réponse apportée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Afficher les films du moment</td>
+<td>Page d'accueil <code>popular.php</code> : les 20 films les plus populaires</td>
+</tr>
+<tr>
+<td>Rechercher un film</td>
+<td>Formulaire dans l'en-tête &rarr; <code>search-films.php?query=…</code></td>
+</tr>
+<tr>
+<td>Rechercher un acteur</td>
+<td>Formulaire dans l'en-tête &rarr; <code>search-acteurs.php?query=…</code></td>
+</tr>
+<tr>
+<td>Consulter un acteur (bonus)</td>
+<td><code>fiche-acteur.php?id=…</code> : photo, biographie, 20 films les plus populaires et rôle joué</td>
+</tr>
+<tr>
+<td>Fonctionner au lycée et à la maison</td>
+<td>Fonction <code>getProxy()</code> qui essaie la connexion directe puis la connexion par le proxy</td>
+</tr>
+<tr>
+<td>Sécuriser les saisies</td>
+<td>Vérification <code>isset</code> / <code>empty</code> et échappement <code>htmlspecialchars</code></td>
+</tr>
+</tbody>
+</table>
+<h3>3. Solutions techniques adoptées</h3>
+<table>
+<thead>
+<tr>
+<th>Fichier</th>
+<th>Rôle</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>get-proxy.php</code></td>
+<td>Requêtes HTTP vers l'API (connexion directe, sinon via le proxy du lycée)</td>
+</tr>
+<tr>
+<td><code>fonctions.php</code></td>
+<td>Fonctions d'appel à l'API (<code>popularMovies</code>, <code>searchFilms</code>, <code>searchActeurs</code>, <code>filmsParActeur</code>, <code>imgUrl</code>)</td>
+</tr>
+<tr>
+<td><code>header.php</code> / <code>footer.php</code></td>
+<td>Barre de navigation avec formulaires de recherche, pied de page (inclus sur toutes les pages)</td>
+</tr>
+<tr>
+<td><code>popular.php</code>, <code>search-films.php</code>, <code>search-acteurs.php</code>, <code>fiche-acteur.php</code></td>
+<td>Pages d'affichage en grille de cartes Bootstrap</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Choix de la méthode <code>GET</code></strong> pour les formulaires : c'est une recherche, sans donnée sensible, et l'URL de résultat (<code>search-acteurs.php?query=tom</code>) peut être partagée ou mise en favori.</p>
+<p><strong>Parcours d'une recherche :</strong></p>
+<div class="highlight"><pre><span></span><code>[Saisie &quot;batman&quot;] --GET--&gt; search-films.php?query=batman
+   ├─ isset($_GET[&#39;query&#39;]) et !empty(trim(...))
+   └─&gt; searchFilms(&quot;batman&quot;)
+         └─&gt; getProxy(URL de l&#39;API TMDB)
+               └─&gt; json_decode() -&gt; tableau PHP
+                     └─&gt; foreach -&gt; cartes Bootstrap
+</code></pre></div>
+
+<h3>4. Extraits de code</h3>
+<p>Appel à l'API et tri de la filmographie d'un acteur (<code>fonctions.php</code>) :</p>
+<div class="highlight"><pre><span></span><code><span class="x">function filmsParActeur(int $personId): array</span>
+<span class="x">{</span>
+<span class="x">    $url      = API_BASE . &#39;/person/&#39; . $personId . &#39;/movie_credits?api_key=&#39; . API_KEY . &#39;&amp;language=fr-FR&#39;;</span>
+<span class="x">    $response = getProxy($url);</span>
+<span class="x">    $data     = json_decode($response, true);   // JSON -&gt; tableau associatif</span>
+<span class="x">    $films    = $data[&#39;cast&#39;] ?? [];</span>
+
+<span class="x">    // tri par popularité décroissante (opérateur &quot;spaceship&quot;)</span>
+<span class="x">    usort($films, fn($a, $b) =&gt; ($b[&#39;popularity&#39;] ?? 0) &lt;=&gt; ($a[&#39;popularity&#39;] ?? 0));</span>
+
+<span class="x">    return array_slice($films, 0, 20);           // 20 films maximum</span>
+<span class="x">}</span>
+</code></pre></div>
+
+<p>Connexion directe ou par le proxy du lycée (<code>get-proxy.php</code>, extrait) :</p>
+<div class="highlight"><pre><span></span><code><span class="x">$response = @file_get_contents($url, false, $context);   // 1. connexion directe</span>
+<span class="x">if ($response !== false) {</span>
+<span class="x">    return $response;</span>
+<span class="x">}</span>
+
+<span class="x">$proxyOptions = array_merge($sslOptions, [               // 2. sinon, via le proxy</span>
+<span class="x">    &#39;http&#39; =&gt; [</span>
+<span class="x">        &#39;proxy&#39;           =&gt; &#39;tcp://172.16.0.54:8080&#39;,</span>
+<span class="x">        &#39;request_fulluri&#39; =&gt; true,</span>
+<span class="x">    ],</span>
+<span class="x">]);</span>
+</code></pre></div>
+
+<p>Vérification de la saisie avant l'appel à l'API (<code>search-acteurs.php</code>) :</p>
+<div class="highlight"><pre><span></span><code><span class="x">if (isset($_GET[&#39;query&#39;]) &amp;&amp; !empty(trim($_GET[&#39;query&#39;]))) {</span>
+<span class="x">    $query     = htmlspecialchars(trim($_GET[&#39;query&#39;]));</span>
+<span class="x">    $resultats = searchActeurs($query);</span>
+<span class="x">}</span>
+</code></pre></div>
+
+<div class="capture">
+<p><i class="bi bi-image"></i>Capture d'écran : page des films populaires</p>
+</div>
+<div class="capture">
+<p><i class="bi bi-image"></i>Capture d'écran : fiche acteur avec sa filmographie</p>
+</div>
+<h3>5. Bilan</h3>
+<p><strong>Ce qui fonctionne :</strong> les quatre fonctionnalités demandées et le bonus de la fiche acteur. L'application marche au lycée comme à la maison, et un compte rendu technique figure dans le dépôt (<code>ref/compte-rendu.md</code>).</p>
+<p><strong>Limites que j'ai identifiées :</strong></p>
+<ul>
+<li>Le code est <strong>procédural</strong> (des fonctions, pas de classes). Une version <strong>orientée objet</strong> serait plus propre : une classe <code>TmdbClient</code> pour les appels à l'API et des classes <code>Film</code> et <code>Acteur</code> pour les données.</li>
+<li>La <strong>clé d'API est écrite en clair</strong> dans un dépôt public. Elle devrait être placée dans un fichier de configuration exclu de Git (<code>.gitignore</code>) ou dans une variable d'environnement.</li>
+<li>La <strong>vérification SSL est désactivée</strong> (<code>verify_peer =&gt; false</code>) pour contourner le proxy du lycée. C'est acceptable pour un TP, pas pour une application en production.</li>
+<li>Le projet a été déposé en <strong>un seul commit</strong>.</li>
+</ul>
+<p><strong>Compétences mobilisées :</strong> concevoir et développer une solution applicative (PHP, consommation d'une API REST), gérer les données (format JSON, tableaux associatifs), sécuriser les saisies utilisateur.</p>
+    </div>
+</article>
     </main>
 
-    <!-- INCLUSION DU FOOTER : -->
-
-
-<footer class="text-center mt-4 mb-0 bg-dark text-light">
-    <small>&copy; 2026 - Portfolio BTS SIO</small>
+<footer class="site-footer">
+    <div class="container py-4 d-flex flex-column flex-md-row gap-3 justify-content-between align-items-md-center">
+        <div>
+            <strong>Anis LOUCIF</strong> &middot; Portfolio BTS SIO SLAM &middot; 2026<br>
+            <small>Site statique généré avec Pelican, hébergé sur GitHub Pages.</small>
+        </div>
+        <div class="d-flex gap-3 footer-links">
+            <a href="../pages/contact.html"><i class="bi bi-envelope"></i> Contact</a>
+            <a href="https://github.com/anisloucif" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            <a href="../downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> CV</a>
+<a href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml"><i class="bi bi-rss"></i> RSS</a>        </div>
+    </div>
 </footer>
     <script src="../theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../theme/js/custom.js"></script>

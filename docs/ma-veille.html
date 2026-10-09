@@ -1,206 +1,230 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Veille Technologique</title>
-    
-    <!-- Favicons :-->
-    <link rel="icon" type="image/png" sizes="16x16" href="./theme/logo/favicon-16x16.png">
+    <meta name="description" content="Portfolio BTS SIO SLAM d'Anis LOUCIF - Lycée Léonard de Vinci (Melun)">
+    <meta name="author" content="Anis LOUCIF">
+    <title>Veille technologique | Anis LOUCIF - BTS SIO SLAM</title>
+
     <link rel="icon" type="image/png" sizes="32x32" href="./theme/logo/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="48x48" href="./theme/logo/favicon-48x48.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./theme/logo/favicon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="./theme/logo/favicon-192x192.png">
-    <link rel="icon" type="image/png" sizes="512x512" href="./theme/logo/favicon-512x512.png">
     <link rel="shortcut icon" href="./theme/logo/favicon.ico">
-
-    <!-- IMPORTS DES BIBLIOTHEQUES (CSS, FONTS, ICONS) : -->
-    
-    <!-- Bootstrap CSS : --> 
+<link rel="alternate" type="application/rss+xml" title="Veille technologique - Anis LOUCIF" href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml">
     <link rel="stylesheet" href="./theme/vendor/bootstrap/css/bootstrap.min.css">
-    
-    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="./theme/vendor/bootstrap-icons/bootstrap-icons.css">
-
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="./theme/vendor/fontawesome/css/all.min.css">
-
-    
-    <!-- STYLES CSS PERSONNEL : -->   
     <link rel="stylesheet" href="./theme/css/custom.css">
-
 </head>
 
-<body class="m-0 p-0">
-    <!-- INCLUSION DU HEADER : -->
-
-<!-- -------- -->
-<!-- HEADER : -->
-<!-- -------- -->
-
-
-<header class="container-fluid py-2 background-header">
-
-<div class="container">
-    <div class="row">
-        <!-- Logo : -->
-        <div class="col-md-4 m-0 p-0 align-content-center text-center">
-            <a href="./" title="Page d'accueil" class="navbar-brand">
-                <img src="./theme/logo/logo_PBS-teal.png" alt="logo du portfolio" style="height: 80px;">
-            </a>
-        </div>
-
-        <div class="col-8 m-0 p-0 align-content-center text-center d-none d-md-block">
-            <!-- Titre principal : -->
-            <h1 class="m-0 p-0 ">Portfolio BTS SIO SLAM</h1>
-
-
-            <!-- Titre secondaire : -->
-            <p class="m-0 p-0">
-                <i>Mon parcours de formation</i>
-            </p>
-
+<body>
+<header class="site-header">
+    <div class="container d-flex align-items-center justify-content-between py-3">
+        <a href="./index.html" class="brand text-decoration-none" title="Accueil">
+            <span class="brand-mark">AL</span>
+            <span class="d-flex flex-column lh-sm">
+                <span class="brand-name">Anis LOUCIF</span>
+                <span class="brand-sub">BTS SIO option SLAM &middot; Lycée Léonard de Vinci</span>
+            </span>
+        </a>
+        <a href="./downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank" class="btn btn-sm btn-cv d-none d-sm-inline-flex align-items-center gap-2">
+            <i class="bi bi-file-earmark-person"></i> Mon CV
+        </a>
+    </div>
+<nav class="navbar navbar-expand-md site-nav" data-bs-theme="dark">
+    <div class="container">
+        <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Ouvrir le menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item ">
+                    <a class="nav-link  " title="Page d'accueil du portfolio"
+                       href="./index.html" >
+                        <i class="bi bi-house me-1"></i>Accueil
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" title="Qui je suis, mon CV, mon parcours scolaire et professionnel."
+                       href="./pages/parcours.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-person-vcard me-1"></i>Présentation
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/parcours.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="./pages/parcours.html">Présentation & CV</a></li>
+                        <li><a class="dropdown-item " href="./pages/parcours-scolaire.html">Parcours scolaire</a></li>
+                        <li><a class="dropdown-item " href="./pages/bts-sio.html">Le BTS SIO</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link  dropdown-toggle" title="Mon stage, mes ateliers professionnels, mes projets et mes certifications."
+                       href="./pages/realisations.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-kanban me-1"></i>Réalisations
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./pages/realisations.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item " href="./pages/stage-sio1.html">Stage de 1re année (ButeurIA)</a></li>
+                        <li><a class="dropdown-item " href="./pages/stage-sio2.html">Stage de 2e année</a></li>
+                        <li><a class="dropdown-item " href="./pages/projets-scolaires.html">Projets scolaires (AP)</a></li>
+                        <li><a class="dropdown-item " href="./pages/projets-personnels.html">Projets personnels</a></li>
+                        <li><a class="dropdown-item " href="./pages/certifications-complementaires.html">Certifications</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" title="Ma veille sur les agents IA et leurs protocoles (MCP, A2A), avec flux RSS."
+                       href="./ma-veille.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="bi bi-broadcast-pin me-1"></i>Veille techno.
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="./ma-veille.html">Vue d'ensemble</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item active" href="./ma-veille.html">Sujet, méthode & outils</a></li>
+                        <li><a class="dropdown-item " href="./archives.html">Archive des articles</a></li>
+                        <li><a class="dropdown-item " href="./tags.html">Mots-clés</a></li>
+                        <li><a class="dropdown-item " href="./feeds/veille.rss.xml">Flux RSS</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link  " title="Me contacter"
+                       href="./pages/contact.html" >
+                        <i class="bi bi-envelope me-1"></i>Contact
+                    </a>
+                </li>
+            </ul>
         </div>
     </div>
-
+</nav></header>
+    <main class="container site-main">
+<article class="page-sheet">
+    <header class="page-head">
+        <p class="kicker">Veille technologique</p>
+        <h1>Les agents IA et leurs protocoles (MCP, A2A)</h1>
+    </header>
+    <div class="page-body">
+        <div class="row g-4">
+<div class="col-md-8">
+<h2>Sujet de veille</h2>
+<p><strong>Comment les agents IA se connectent-ils aux outils et aux données des entreprises ?</strong></p>
+<p>Un <strong>agent IA</strong> est un programme qui s'appuie sur un modèle de langage (LLM) pour <strong>réaliser des actions</strong> à la place de l'utilisateur : chercher un document, créer un ticket, envoyer un email, interroger une base de données. Pour cela, l'agent doit pouvoir se connecter aux applications existantes. Depuis fin 2024, des <strong>protocoles standards</strong> apparaissent pour encadrer ces connexions, en particulier :</p>
+<ul>
+<li><strong>MCP</strong> (<em>Model Context Protocol</em>) : relie un agent à des outils et à des sources de données ;</li>
+<li><strong>A2A</strong> (<em>Agent2Agent</em>) : permet à des agents de communiquer entre eux.</li>
+</ul>
 </div>
-    
-</header>
-
-
-<!-- NAVBAR : -->
-<div class="container-fluid m-0 p-0 sticky-top bg-dark shadow">
-
-
-    <nav class="navbar navbar-expand-md sticky-top">
-        <div class="container ms-2 ps-1 mx-lg-auto px-lg-0">            
-
-            <!-- Bouton dévellopement menu en mode collapsé : -->
-            <div class="me-2">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+<div class="col-md-4">
+<div class="info-card">
+<h3 class="h6"><i class="bi bi-lightbulb"></i> Pourquoi ce sujet ?</h3>
+<p class="small mb-0">Pendant la 2<sup>e</sup> phase de mon <a href="./pages/stage-sio1.html">stage de 1<sup>re</sup> année</a>, j'ai observé la conception d'une <strong>plateforme d'orchestration d'agents IA pour les TPE/PME</strong>. Pour un développeur SLAM, savoir intégrer une application à ces agents (par exemple en exposant une API via MCP) devient une compétence recherchée.</p>
+</div>
+</div>
+</div>
+<h2>Méthodologie</h2>
+<ol>
+<li><strong>Collecter</strong> : je suis des sources fiables (blogs officiels des éditeurs, presse tech) via un agrégateur de flux RSS et des alertes par mots-clés.</li>
+<li><strong>Trier</strong> : je ne garde que les annonces qui changent concrètement quelque chose pour un développeur (nouveau standard, nouvel outil, nouvelle obligation).</li>
+<li><strong>Vérifier</strong> : je remonte toujours à la <strong>source officielle</strong> (annonce de l'éditeur, documentation) avant de rédiger.</li>
+<li><strong>Synthétiser</strong> : pour chaque nouveauté, un article court avec un résumé, ce que ça change pour un développeur et la source.</li>
+<li><strong>Diffuser</strong> : les articles sont publiés ici et dans le <strong>flux RSS du portfolio</strong>.</li>
+</ol>
+<h2>Outils utilisés</h2>
+<table>
+<thead>
+<tr>
+<th>Outil</th>
+<th>Rôle</th>
+<th>Configuration</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Feedly</strong> (agrégateur RSS)</td>
+<td>Centraliser les flux des sources</td>
+<td>Dossier « Agents IA » : blogs Anthropic, OpenAI, Google Cloud, Linux Foundation, Le Monde Informatique, Usine Digitale, Blog du Modérateur</td>
+</tr>
+<tr>
+<td><strong>Google Alerts</strong></td>
+<td>Être averti des nouveaux articles</td>
+<td>Alertes : <code>"Model Context Protocol"</code>, <code>"agents IA" entreprise</code>, <code>"Agent2Agent"</code>, <code>"AI Act" développeurs</code></td>
+</tr>
+<tr>
+<td><strong>GitHub</strong></td>
+<td>Suivre les projets open source</td>
+<td>Dépôts suivis (<em>Watch</em>) : spécification MCP, SDK officiels</td>
+</tr>
+<tr>
+<td><strong>Ce portfolio (Pelican)</strong></td>
+<td>Publier et diffuser</td>
+<td>Articles en Markdown, flux RSS généré automatiquement</td>
+</tr>
+</tbody>
+</table>
+<div class="info-card my-3">
+<div class="d-flex flex-wrap align-items-center gap-3">
+<p><i class="bi bi-rss-fill" style="font-size:2rem;color:#e67e22"></i></p>
+<div class="flex-grow-1">
+<p><strong>S'abonner à ma veille par flux RSS</strong><br>
+<span class="small text-muted">Copiez cette adresse dans votre lecteur de flux (Feedly, Inoreader, Thunderbird…)</span><br>
+<code>https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml</code></p>
+</div>
+<p><a href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml" class="btn btn-outline-primary btn-sm"><i class="bi bi-rss"></i> Flux RSS</a>
+<a href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.atom.xml" class="btn btn-outline-secondary btn-sm">Atom</a></p>
+</div>
+</div>
+<h2>Synthèse provisoire</h2>
+<p>En un an, on est passé de connexions « bricolées » au cas par cas à des <strong>standards ouverts</strong> (MCP, A2A), gérés par des fondations neutres (Linux Foundation) et adoptés par les principaux éditeurs, même concurrents. En parallèle, la <strong>réglementation européenne</strong> (AI Act) fixe des obligations aux entreprises qui conçoivent ou déploient de l'IA. Pour un développeur, cela veut dire : <strong>savoir exposer son application à des agents</strong> (API documentée, serveur MCP) tout en gardant le <strong>contrôle des accès et des données</strong>.</p>
+        <h2 id="articles">Articles de veille</h2>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <a href="./veille/ai-act-2-aout-2026.html" class="veille-card">
+                    <span class="veille-date">02/08/2026</span>
+                    <span class="veille-title">AI Act : l'échéance du 2 août 2026 et le report envisagé</span>
+                    <span class="veille-sum">Le règlement européen sur l'IA prévoyait le 2 août 2026 pour une grande partie de ses obligations ; le paquet « omnibus numérique » propose d'en reporter une partie.</span>
+                    <span class="d-flex flex-wrap gap-1 mt-2"><span class="tag">AI Act</span><span class="tag">réglementation</span><span class="tag">Union européenne</span><span class="tag">conformité</span></span>
+                </a>
             </div>
-
-            <!-- Eléments de navigation : -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <ul class="navbar-nav nav-underline ms-4 ms-md-0  mb-md-0 mt-4 mt-md-0 fw-bold">
-                        
-                        
-                        <li class="nav-item ">
-                            <a  class="nav-link py-0 "
-                                title="Page d'accueil du portefolio"                                
-                                href="./index"
-                            >
-                            <i  class="bi bi-house d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Accueil
-                            </a>
-                            
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Découvrez mon parcours scolaire et professionnel."                                
-                                href="./pages/parcours"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-mortarboard d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Mon parcours
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="./pages/parcours-scolaire">Parcours scolaire</a></li>
-                                        <li><a class="dropdown-item " href="./pages/bts-sio">Le BTS SIO</a></li>
-                                </ul> 
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0 "
-                                title="Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels."                                
-                                href="./pages/realisations"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-check2-square d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Réalisations
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item " href="./pages/tp-majeurs">TP majeurs</a></li>
-                                        <li><a class="dropdown-item " href="./pages/stage-sio1">Stage de 1ère année</a></li>
-                                        <li><a class="dropdown-item " href="./pages/stage-sio2">Stage de 2e année</a></li>
-                                        <li><a class="dropdown-item " href="./pages/projets-scolaires">Projets scolaires</a></li>
-                                        <li><a class="dropdown-item " href="./pages/projets-personnels">Projets personnels</a></li>
-                                        <li><a class="dropdown-item " href="./pages/certifications-complementaires">Certifications complémentaires</a></li>
-                                </ul> 
-                        </li>
-                        
-                        
-                        <li class="nav-item  dropdown ">
-                            <a  class="nav-link py-0  active "
-                                title="Consultez les articles de veille technologique que j’ai suivis durant cette année."                                
-                                href="./ma-veille"
- data-bs-toggle="dropdown" aria-expanded="false"                             >
-                            <i  class="bi bi-broadcast-pin d-md-block text-md-center me-md-0 me-2 nav-link-icon"></i>
-                                Veille techno.
-                            </a>
-                            
-                                <ul class="dropdown-menu bg-dark-subtle">
-                                        <li><a class="dropdown-item  active " href="./ma-veille">Ma veille technologique</a></li>
-                                        <li><a class="dropdown-item " href="./archives">Archive des articles</a></li>
-                                        <li><a class="dropdown-item " href="./categories">Liste des catégories</a></li>
-                                        <li><a class="dropdown-item " href="./authors">Liste des auteurs</a></li>
-                                        <li><a class="dropdown-item " href="./tags">Liste des mots clés</a></li>
-                                </ul> 
-                        </li>
-                </ul>
-
-            </div>            
+            <div class="col-md-6">
+                <a href="./veille/mcp-agentic-ai-foundation.html" class="veille-card">
+                    <span class="veille-date">09/12/2025</span>
+                    <span class="veille-title">MCP confié à la nouvelle Agentic AI Foundation (Linux Foundation)</span>
+                    <span class="veille-sum">Anthropic transfère le Model Context Protocol (MCP) à l'Agentic AI Foundation, créée sous l'égide de la Linux Foundation pour les standards des agents IA.</span>
+                    <span class="d-flex flex-wrap gap-1 mt-2"><span class="tag">MCP</span><span class="tag">Anthropic</span><span class="tag">Linux Foundation</span><span class="tag">agents IA</span><span class="tag">standard ouvert</span></span>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="./veille/openai-agentkit.html" class="veille-card">
+                    <span class="veille-date">06/10/2025</span>
+                    <span class="veille-title">OpenAI lance AgentKit pour créer et déployer des agents IA</span>
+                    <span class="veille-sum">Lors de son DevDay 2025, OpenAI présente AgentKit, une suite d'outils pour concevoir visuellement, intégrer et évaluer des agents IA.</span>
+                    <span class="d-flex flex-wrap gap-1 mt-2"><span class="tag">OpenAI</span><span class="tag">AgentKit</span><span class="tag">agents IA</span><span class="tag">outils de développement</span></span>
+                </a>
+            </div>
+            <div class="col-md-6">
+                <a href="./veille/a2a-linux-foundation.html" class="veille-card">
+                    <span class="veille-date">23/06/2025</span>
+                    <span class="veille-title">Le protocole Agent2Agent (A2A) de Google rejoint la Linux Foundation</span>
+                    <span class="veille-sum">Google confie son protocole A2A, qui permet à des agents IA de dialoguer entre eux, à la Linux Foundation pour en faire un standard ouvert.</span>
+                    <span class="d-flex flex-wrap gap-1 mt-2"><span class="tag">A2A</span><span class="tag">Google</span><span class="tag">Linux Foundation</span><span class="tag">agents IA</span><span class="tag">interopérabilité</span></span>
+                </a>
+            </div>
         </div>
-    </nav>     
-</div>
-    <main class="container mt-5 p-0 min-vh-100">
-        <!-- BLOCK POUR L'INSERTION DU CONTENU : -->
-    <h1>Veille technologique</h1>
-
-      <p>Bienvenue sur ma page de veille technologique. Vous y trouverez une sélection d'articles, de ressources et de recherches que j'ai suivis durant ma formation en BTS SIO.</p>
-
-    <ul class="list-group">
-        <li class="list-group-item">
-            <h5><a href="./veille/nouvelle-ia-de-google-nano-banana.html">Nouvelle IA de Google : Nano-Banana</a></h5>
-            <p><small>27/08/2025 | Tags : image, Google, Nano-Banana, Gemini</small></p>
-            <p><p>Nano-Banana, le modèle de retouche d'images signé Google qui fait fureur</p></p>
-        </li>
-        <li class="list-group-item">
-            <h5><a href="./veille/openai-sort-chatgpt-5.html">OpenAI sort ChatGPT-5</a></h5>
-            <p><small>07/08/2025 | Tags : LLM, ChatGPT, ChatGPT5, OpenAI</small></p>
-            <p><p>Aujourd'hui la nouvelle version de ChatGTP est disponible pour le public.</p></p>
-        </li>
-        <li class="list-group-item">
-            <h5><a href="./veille/synthese-vocale-avec-flow-veo-3.html">Synthèse vocale avec Flow & Veo 3</a></h5>
-            <p><small>11/07/2025 | Tags : Veo, Google, Flow</small></p>
-            <p><p>Google étoffe Flow avec la synthèse vocale sur images dans Veo 3</p></p>
-        </li>
-        <li class="list-group-item">
-            <h5><a href="./veille/veo-3-est-disponible-en-france.html">Veo 3 est disponible en France</a></h5>
-            <p><small>04/07/2025 | Tags : Google, Veo, vidéo</small></p>
-            <p><p>Google met à disposition sont modèle de génération <strong>Veo 3</strong> pour la France.</p></p>
-        </li>
-        <li class="list-group-item">
-            <h5><a href="./veille/evenement-choose-france.html">Evènement Choose France</a></h5>
-            <p><small>19/05/2025 | Tags : Choose France, investissement</small></p>
-            <p><p>LE 8e sommet Choose France s'est déroulé</p></p>
-        </li>
-    </ul>
+    </div>
+</article>
     </main>
 
-    <!-- INCLUSION DU FOOTER : -->
-
-
-<footer class="text-center mt-4 mb-0 bg-dark text-light">
-    <small>&copy; 2026 - Portfolio BTS SIO</small>
+<footer class="site-footer">
+    <div class="container py-4 d-flex flex-column flex-md-row gap-3 justify-content-between align-items-md-center">
+        <div>
+            <strong>Anis LOUCIF</strong> &middot; Portfolio BTS SIO SLAM &middot; 2026<br>
+            <small>Site statique généré avec Pelican, hébergé sur GitHub Pages.</small>
+        </div>
+        <div class="d-flex gap-3 footer-links">
+            <a href="./pages/contact.html"><i class="bi bi-envelope"></i> Contact</a>
+            <a href="https://github.com/anisloucif" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            <a href="./downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> CV</a>
+<a href="https://anisloucif.github.io/Pelican-Portfolio/feeds/veille.rss.xml"><i class="bi bi-rss"></i> RSS</a>        </div>
+    </div>
 </footer>
     <script src="./theme/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./theme/js/custom.js"></script>

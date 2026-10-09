@@ -1,11 +1,15 @@
-{#
-_______________________________________________________________________________
-        
-                            FOOTER DU SITE
-_______________________________________________________________________________
-#}
-
-
-<footer class="text-center mt-4 mb-0 bg-dark text-light">
-    <small>&copy; {{ CURRENT_YEAR }} - Portfolio BTS SIO</small>
+{# FOOTER #}
+<footer class="site-footer">
+    <div class="container py-4 d-flex flex-column flex-md-row gap-3 justify-content-between align-items-md-center">
+        <div>
+            <strong>{{ AUTHOR }}</strong> &middot; Portfolio BTS SIO SLAM &middot; {{ CURRENT_YEAR }}<br>
+            <small>Site statique généré avec Pelican, hébergé sur GitHub Pages.</small>
+        </div>
+        <div class="d-flex gap-3 footer-links">
+            <a href="{{ SITEURL }}/pages/contact.html"><i class="bi bi-envelope"></i> Contact</a>
+            <a href="https://github.com/anisloucif" target="_blank" rel="noopener"><i class="bi bi-github"></i> GitHub</a>
+            <a href="{{ SITEURL }}/downloads/CV_Anis_LOUCIF_BTS_SIO.pdf" target="_blank"><i class="bi bi-file-earmark-pdf"></i> CV</a>
+            {% if FEED_ALL_RSS %}<a href="{{ FEED_DOMAIN }}/{{ FEED_ALL_RSS }}"><i class="bi bi-rss"></i> RSS</a>{% endif %}
+        </div>
+    </div>
 </footer>

@@ -1,6 +1,8 @@
-Title: BTS SIO
+Title: Le BTS SIO
+Slug: bts-sio
+Date: 2026-10-09
+Kicker: Présentation
 
-# 🎓 BTS SIO – Services Informatiques aux Organisations
 
 <img    src="{static}/images/BTS_SIO.png" alt="Logo LdV" class="shadow" style="width: 200px;">
 

@@ -1,8 +1,10 @@
 Title: Parcours scolaire
+Slug: parcours-scolaire
+Date: 2026-10-09
+Kicker: Présentation
 
-# Présentation de mon parcours scolaire
 
-Titulaire d'un Baccalauréat Professionnel en **Gestion-Administration** obtenu avec la mention "Bien" en 2022, j'ai initialement poursuivi mes études en intégrant le BTS **Gestion de la PME**(GPME). Aptès avoir validé ma première année, j'ai pris la décision d'interrompre cette formation en décembre 2023, au coursj'avais la volonté de poursuivre dans le domaine de l'informatique. Après m'être renseigné, j'avais recensé les poursuites d'études suivantes dans le domaine de l'informatique :
+Titulaire d'un Baccalauréat Professionnel en **Gestion-Administration** obtenu avec la mention "Bien" en 2022, j'ai initialement poursuivi mes études en intégrant le BTS **Gestion de la PME** (GPME). Après avoir validé ma première année, j'ai pris la décision d'interrompre cette formation en décembre 2023 : j'avais la volonté de poursuivre dans le domaine de l'informatique. J'ai ensuite travaillé en intérim dans la logistique, où j'utilisais chaque jour des outils numériques de gestion de stock, ce qui a confirmé mon envie de passer au développement. Après m'être renseigné, j'avais recensé les poursuites d'études suivantes dans le domaine de l'informatique :
 
 
 
@@ -34,6 +36,6 @@ Formation en 3 ans (mais on peut sortir après 2 ans avec un DUT).
 
 
 
-J'ai opté pour le **BTS SIO** en spécialité **SLAM** pour approfondir mes compétences en développement d'applications. J'ai choisi le **STS** du lycée **Léonard de Vinci** de la ville de Melun.
+J'ai opté pour le **BTS SIO** en spécialité **SLAM** pour approfondir mes compétences en développement d'applications. J'ai intégré en septembre 2025 la section de technicien supérieur du lycée **Léonard de Vinci** de Melun.
 
 <img    src="{static}/images/logo&baseline-fondblanc.png" alt="Logo LdV" style="width: 200px;">

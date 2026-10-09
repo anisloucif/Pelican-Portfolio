@@ -1,19 +1,26 @@
 {% extends 'base.html' %}
-
-{% block title %}Veille Technologique{% endblock %}
-
+{% block title %}Veille technologique{% endblock %}
 {% block content %}
-    <h1>Veille technologique</h1>
-
-      {{ page.content }}
-
-    <ul class="list-group">
-    {% for article in articles %}
-        <li class="list-group-item">
-            <h5><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h5>
-            <p><small>{{ article.date.strftime('%d/%m/%Y') }} | Tags : {{ article.tags|join(', ') }}</small></p>
-            <p>{{ article.summary }}</p>
-        </li>
-    {% endfor %}
-    </ul>
+<article class="page-sheet">
+    <header class="page-head">
+        <p class="kicker">Veille technologique</p>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <div class="page-body">
+        {{ page.content }}
+        <h2 id="articles">Articles de veille</h2>
+        <div class="row g-3">
+        {% for article in articles %}
+            <div class="col-md-6">
+                <a href="{{ SITEURL }}/{{ article.url }}" class="veille-card">
+                    <span class="veille-date">{{ article.date.strftime('%d/%m/%Y') }}</span>
+                    <span class="veille-title">{{ article.title }}</span>
+                    <span class="veille-sum">{{ article.summary|striptags }}</span>
+                    <span class="d-flex flex-wrap gap-1 mt-2">{% for tag in article.tags %}<span class="tag">{{ tag }}</span>{% endfor %}</span>
+                </a>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</article>
 {% endblock %}

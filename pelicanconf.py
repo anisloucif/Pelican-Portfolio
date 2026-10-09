@@ -16,10 +16,10 @@ from datetime import datetime
 # Cette section contient les variables générales associé au site/portefolio.
 
 SITENAME = 'Portfolio BTS SIO SLAM'
-SITESUBTITLE = "Mon parcours de formation"
+SITESUBTITLE = "Anis LOUCIF — Développeur d'applications en formation"
 AUTHOR = 'Anis LOUCIF'
-SITEURL = "" # Est surchargé par l'url du serveur dans le fichier publishconf.py
-TIMEZONE = 'Europe/Rome'
+SITEURL = "https://anisloucif.github.io/Pelican-Portfolio" # URL publique (utilisée par le flux RSS ; les liens des pages restent relatifs)
+TIMEZONE = 'Europe/Paris'
 DEFAULT_LANG = 'fr'
 CURRENT_YEAR = datetime.now().year
 RELATIVE_URLS = True # Est surchargé par la valeur False dans le fichier publishconf.py
@@ -51,7 +51,7 @@ OUTPUT_PATH = 'docs'           # Attention, pour la publication sur GitHub Pages
 ARTICLE_URL = 'veille/{slug}.html'
 ARTICLE_SAVE_AS = 'veille/{slug}.html'
 
-PAGE_URL = '{slug}.html'
+PAGE_URL = 'pages/{slug}.html'
 PAGE_SAVE_AS = 'pages/{slug}.html'
 
 
@@ -61,40 +61,39 @@ PAGE_SAVE_AS = 'pages/{slug}.html'
 
 # ((nom, url, icone, (nom, url, icone),description, couleur)...)
 MENUITEMS = (
-    ("Accueil", "/index", "house", None, "Page d'accueil du portefolio", None),
+    ("Accueil", "/index", "house", None, "Page d'accueil du portfolio", None),
 
-    ("Mon parcours", "/pages/parcours", "mortarboard",
+    ("Présentation", "/pages/parcours", "person-vcard",
         (
+            ("Présentation & CV", "/pages/parcours"),
             ("Parcours scolaire", "/pages/parcours-scolaire"),
             ("Le BTS SIO", "/pages/bts-sio")
         ),
-        "Découvrez mon parcours scolaire et professionnel.", "primary"
+        "Qui je suis, mon CV, mon parcours scolaire et professionnel.", "primary"
     ),
 
-    ("Réalisations", "/pages/realisations", "check2-square",
+    ("Réalisations", "/pages/realisations", "kanban",
         (
-            ("TP majeurs", "/pages/tp-majeurs"),
-            ("Stage de 1ère année", "/pages/stage-sio1"),
+            ("Stage de 1re année (ButeurIA)", "/pages/stage-sio1"),
             ("Stage de 2e année", "/pages/stage-sio2"),
-            ("Projets scolaires", "/pages/projets-scolaires"),
-            ("Projets personnels", "/pages/projets-personnels"),                             # Optionnel
-            ("Certifications complémentaires", "/pages/certifications-complementaires") # Optionnel
+            ("Projets scolaires (AP)", "/pages/projets-scolaires"),
+            ("Projets personnels", "/pages/projets-personnels"),
+            ("Certifications", "/pages/certifications-complementaires")
         ),
-        "Accédez aux projets et TP réalisés pendant ma formation et à mes projets personnels.", "success"
+        "Mon stage, mes ateliers professionnels, mes projets et mes certifications.", "success"
      ),
 
     ("Veille techno.", "/ma-veille", "broadcast-pin",
         (
-        ("Ma veille technologique", "/ma-veille"),
-        ("Archive des articles", "/archives"),
-        ("Liste des catégories", "/categories"),
-        ("Liste des auteurs", "/authors"),
-        ("Liste des mots clés", "/tags")
+            ("Sujet, méthode & outils", "/ma-veille"),
+            ("Archive des articles", "/archives"),
+            ("Mots-clés", "/tags"),
+            ("Flux RSS", "/feeds/veille.rss.xml")
         ),
-        "Consultez les articles de veille technologique que j’ai suivis durant cette année.", "warning"
+        "Ma veille sur les agents IA et leurs protocoles (MCP, A2A), avec flux RSS.", "warning"
     ),
 
-    
+    ("Contact", "/pages/contact", "envelope", None, "Me contacter", None),
 )
 
 MAINITEMS = MENUITEMS[1:4] # Récupération de PARCOURS, REALISATION & VEILLE pour afficage dans index.html
@@ -113,18 +112,25 @@ PLUGINS = []
 # Options associée à la génération et pagination des articles (veille).
 
 # Résumé des articles
-SUMMARY_MAX_LENGTH = 100
+SUMMARY_MAX_LENGTH = 60
 
 # Pagination
 DEFAULT_PAGINATION = 10
 
 
 
-# Flux RSS/Atom :
-# ---------------
-FEED_ALL_ATOM = None
+# Flux RSS/Atom (veille technologique) :
+# ---------------------------------------
+FEED_DOMAIN = SITEURL
+FEED_ALL_RSS = 'feeds/veille.rss.xml'
+FEED_ALL_ATOM = 'feeds/veille.atom.xml'
+FEED_MAX_ITEMS = 20
+RSS_FEED_SUMMARY_ONLY = True
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 TAG_FEED_ATOM = None
+
+# Fichiers non publiés
+IGNORE_FILES = ['.#*', '*.md~', 'monCV.md']
