@@ -1,23 +1,93 @@
-Title: Projets scolaires : ateliers professionnels de 1re année
+Title: Projets scolaires : ateliers professionnels et projet de 2e année
 Slug: projets-scolaires
 Date: 2026-10-09
-Kicker: Réalisations · Ateliers professionnels (AP)
-Lead: Comptes rendus des deux ateliers professionnels réalisés en 1re année de BTS SIO : le site de l'Hôtel Chambord (front-end) et l'application Cinéma connectée à l'API TMDB (PHP).
+Kicker: Réalisations · Projets scolaires
+Lead: Comptes rendus de mes projets de BTS SIO : PolymathIA, le chatbot de 2e année (Kotlin, Spring Boot), et les deux ateliers professionnels de 1re année, le site de l'Hôtel Chambord (front-end) et l'application Cinéma connectée à l'API TMDB (PHP).
 
 <div markdown="1" class="row g-3 mb-4">
-<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<div markdown="1" class="col-md-4"><div markdown="1" class="info-card">
+<p class="kicker mb-1">Projet · 2e année (en cours)</p>
+<h3 class="h5"><a href="#polymathia">PolymathIA : chatbot d'intelligence artificielle</a></h3>
+<p class="small mb-2">Application web pour discuter avec des modèles d'IA (Mistral, Gemini), menée en sprints.</p>
+<span class="skill">Kotlin</span><span class="skill">Spring Boot</span><span class="skill">JPA</span><span class="skill">MariaDB</span><span class="skill">UML</span>
+</div></div>
+<div markdown="1" class="col-md-4"><div markdown="1" class="info-card">
 <p class="kicker mb-1">AP · 1re année (déc. 2025)</p>
 <h3 class="h5"><a href="#ap1">Site web de l'Hôtel Chambord</a></h3>
 <p class="small mb-2">Site vitrine et espace de gestion d'un hôtel de luxe : 19 pages responsives.</p>
 <span class="skill">HTML5</span><span class="skill">CSS3</span><span class="skill">Bootstrap 5</span><span class="skill">JavaScript</span>
 </div></div>
-<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<div markdown="1" class="col-md-4"><div markdown="1" class="info-card">
 <p class="kicker mb-1">AP · 1re année (avril 2026)</p>
 <h3 class="h5"><a href="#ap2">Cinéma : application connectée à l'API TMDB</a></h3>
 <p class="small mb-2">Recherche de films et d'acteurs, fiche acteur avec filmographie, via une API REST.</p>
 <span class="skill">PHP 8</span><span class="skill">API REST</span><span class="skill">JSON</span><span class="skill">Bootstrap 5</span>
 </div></div>
 </div>
+
+<h2 id="polymathia">Projet « PolymathIA » : chatbot d'intelligence artificielle</h2>
+
+<p>
+<a href="https://github.com/anisloucif/PolymathIA" target="_blank" rel="noopener" class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i> Code source</a>
+</p>
+
+### 1. Contexte
+
+**PolymathIA** est le projet de 2e année de BTS SIO SLAM : une application web de type chatbot, qui permettra à un utilisateur de discuter avec différents modèles d'intelligence artificielle (Mistral, Gemini) et de retrouver ses conversations. Le projet est mené **en sprints**, avec un support par séance et un commit à la fin de chaque grande étape.
+
+### 2. Ce qui est réalisé (Sprint 1)
+
+| Étape | Réalisation |
+|---|---|
+| Conception | Cahier des charges, diagrammes UML sous StarUML : cas d'utilisation, classes, modèle entité-association |
+| Initialisation | Projet Spring Boot en Kotlin, dépôt GitHub, fichier de configuration exclu de Git (`.gitignore`) |
+| Interface | Pages Thymeleaf : accueil (interface du chatbot) et connexion, avec un premier contrôleur |
+| Données | Entités `Conversation`, `Message`, `ModeleIA`, `FournisseurIA` et énumération `TypeMessage`, avec leurs DAO |
+| Relations | 3 associations « un vers plusieurs » : un fournisseur propose plusieurs modèles, un modèle sert à plusieurs conversations, une conversation contient plusieurs messages |
+| Initialisation des données | `DataInitializer` : ajoute au démarrage les fournisseurs Mistral et Gemini et 4 modèles |
+
+### 3. Solutions techniques adoptées
+
+- **Spring Boot** et **Kotlin**, avec **Thymeleaf** pour les pages et **Spring Data JPA (Hibernate)** pour la base **MariaDB**.
+- **Architecture MVC** : les entités dans `model/entity`, l'accès aux données dans `model/dao`, les routes dans `controller`, les pages dans `templates`.
+- **Des DAO qui héritent de `JpaRepository`** : les opérations courantes (`save`, `findAll`, `findById`, `delete`) sont fournies sans écrire de SQL.
+- **La base en `utf8mb4`**, pour pouvoir enregistrer les émojis dans les messages.
+
+### 4. Extraits de code
+
+Entité `Message` reliée à sa conversation (`model/entity/Message.kt`) :
+
+```kotlin
+@Entity
+class Message (
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false)
+    var id: Long? = null,
+    @Column(columnDefinition = "TEXT", nullable = false)
+    var contenu: String,
+    var dateCreation: LocalDateTime,
+    var type: TypeMessage,
+
+    @ManyToOne
+    @JoinColumn(name = "conversation_id")
+    var conversation: Conversation? = null,
+)
+```
+
+DAO correspondant (`model/dao/MessageDAO.kt`) :
+
+```kotlin
+interface MessageDAO : JpaRepository<Message, Long>
+```
+
+### 5. Bilan d'étape
+
+**Ce qui fonctionne :** le projet démarre, les 4 tables sont créées automatiquement dans MariaDB, et les fournisseurs et modèles d'IA sont insérés au lancement.
+
+**Prochaines étapes :** les comptes utilisateurs et la connexion (Spring Security), puis l'envoi des messages aux API Mistral et Gemini.
+
+**Compétences mobilisées :** concevoir une solution applicative (cahier des charges, UML), développer avec un framework (Spring Boot), gérer les données (entités, relations, base MariaDB), travailler en mode projet avec Git.
 
 <h2 id="ap1">AP « Hôtel Chambord » : site web d'un hôtel de luxe</h2>
 

@@ -63,7 +63,7 @@ pelican -lr                 # http://localhost:8000
 # 3. Publier
 git add .
 git commit -m "docs: mise à jour du rapport de stage"
-git push origin master      # GitHub Pages republie le dossier docs/
+git push origin main        # GitHub Pages republie le dossier docs/
 ```
 
 ### Difficultés rencontrées

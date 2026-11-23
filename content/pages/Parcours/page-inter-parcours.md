@@ -41,15 +41,16 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 <div markdown="1" class="row g-3">
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-code-slash"></i> Langages</h4>
-<span class="skill">HTML / CSS</span><span class="skill">JavaScript</span><span class="skill">PHP</span><span class="skill">Python</span><span class="skill">Java</span><span class="skill">Kotlin</span><span class="skill">C#</span>
+<span class="skill">Kotlin</span><span class="skill">PHP</span><span class="skill">HTML / CSS</span><span class="skill">JavaScript</span>
+<p class="small mb-0 mt-2">Notions : Python, Java, C#</p>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-database"></i> Bases de données</h4>
-<span class="skill">SQL</span><span class="skill">MySQL</span><span class="skill">Oracle</span>
+<span class="skill">SQL</span><span class="skill">MySQL</span><span class="skill">MariaDB</span><span class="skill">JDBC</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-tools"></i> Outils & environnements</h4>
-<span class="skill">Git / GitHub</span><span class="skill">Clés SSH</span><span class="skill">VS Code</span><span class="skill">Docker</span><span class="skill">Bootstrap 5</span><span class="skill">Pelican</span><span class="skill">Odoo</span>
+<span class="skill">Spring Boot</span><span class="skill">JPA / Hibernate</span><span class="skill">Thymeleaf</span><span class="skill">Bootstrap 5</span><span class="skill">Git / GitHub</span><span class="skill">Clés SSH</span><span class="skill">IntelliJ IDEA</span><span class="skill">VS Code</span><span class="skill">Gradle</span><span class="skill">Pelican</span><span class="skill">Odoo</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-bug"></i> Qualité logicielle (découverte en stage)</h4>
@@ -57,11 +58,11 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-pc-display"></i> Systèmes</h4>
-<span class="skill">Windows</span><span class="skill">Linux (Ubuntu)</span><span class="skill">macOS</span><span class="skill">ChromeOS</span>
+<span class="skill">Windows</span><span class="skill">Linux (Ubuntu)</span><span class="skill">macOS</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-translate"></i> Langues</h4>
-<span class="skill">Français (maternelle)</span><span class="skill">Anglais B2</span><span class="skill">Arabe (courant)</span><span class="skill">Espagnol A1</span>
+<span class="skill">Français (maternelle)</span><span class="skill">Anglais B2</span><span class="skill">Arabe (courant à l'oral)</span><span class="skill">Espagnol B1</span>
 </div></div>
 </div>
 
@@ -71,7 +72,7 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 <li><span class="when">Janv. - fév. 2027</span><br><strong>Stage de 2<sup>e</sup> année</strong> (8 semaines), recherche en cours</li>
 <li><span class="when">Mai - juin 2026</span><br><strong>Stage de 1<sup>re</sup> année</strong>, stage d'observation à distance : découverte de la qualité logicielle sur l'application ButeurIA (web et mobile), Git / GitHub / SSH. <a href="{filename}/pages/Realisations/stage-sio1.md">Voir le rapport</a></li>
 <li><span class="when">Depuis sept. 2025</span><br><strong>BTS SIO option SLAM</strong>, lycée Léonard de Vinci (Melun)</li>
-<li><span class="when">2023 - 2025</span><br><strong>Missions d'intérim en logistique</strong> : Amazon (Brétigny-sur-Orge), Dierre France (Les Ulis), Castorama (Villabé). Gestion de stock informatisée, inventaires, Excel</li>
+<li><span class="when">2023 - 2026</span><br><strong>Missions d'intérim en logistique et en industrie</strong> : Amazon (Brétigny-sur-Orge), Dierre France (Les Ulis), Castorama (Villabé), Itron (Massy). Gestion de stock informatisée, inventaires, Excel</li>
 <li><span class="when">2022 - 2023</span><br><strong>1<sup>re</sup> année de BTS GPME</strong> validée, lycée François Truffaut (Bondoufle)</li>
 <li><span class="when">2019 - 2022</span><br><strong>Bac Pro Gestion-Administration, mention Bien</strong>, lycée Paul Langevin (Sainte-Geneviève-des-Bois)</li>
 </ul>

@@ -76,11 +76,11 @@ MENUITEMS = (
         (
             ("Stage de 1re année (ButeurIA)", "/pages/stage-sio1"),
             ("Stage de 2e année", "/pages/stage-sio2"),
-            ("Projets scolaires (AP)", "/pages/projets-scolaires"),
+            ("Projets scolaires", "/pages/projets-scolaires"),
             ("Projets personnels", "/pages/projets-personnels"),
             ("Certifications", "/pages/certifications-complementaires")
         ),
-        "Mon stage, mes ateliers professionnels, mes projets et mes certifications.", "success"
+        "Mes stages, mes projets de BTS, mes projets personnels et mes certifications.", "success"
      ),
 
     ("Veille techno.", "/ma-veille", "broadcast-pin",
