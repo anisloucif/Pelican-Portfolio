@@ -41,24 +41,40 @@ Ce qui m'intéresse aujourd'hui : le **développement web**, la **qualité logic
 <div markdown="1" class="row g-3">
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-code-slash"></i> Langages</h4>
-<span class="skill">Kotlin</span><span class="skill">PHP</span><span class="skill">HTML / CSS</span><span class="skill">JavaScript</span>
+<span class="skill">Kotlin</span><span class="skill">PHP 8</span><span class="skill">SQL</span><span class="skill">HTML</span><span class="skill">CSS</span><span class="skill">JavaScript</span>
 <p class="small mb-0 mt-2">Notions : Python, Java, C#</p>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<h4><i class="bi bi-layers"></i> Frameworks</h4>
+<span class="skill">Spring Boot</span><span class="skill">JPA / Hibernate</span><span class="skill">Thymeleaf</span><span class="skill">Bootstrap 5</span>
+</div></div>
+<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-database"></i> Bases de données</h4>
-<span class="skill">SQL</span><span class="skill">MySQL</span><span class="skill">MariaDB</span><span class="skill">JDBC</span>
+<span class="skill">MySQL</span><span class="skill">MariaDB</span><span class="skill">JDBC</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
-<h4><i class="bi bi-tools"></i> Outils & environnements</h4>
-<span class="skill">Spring Boot</span><span class="skill">JPA / Hibernate</span><span class="skill">Thymeleaf</span><span class="skill">Bootstrap 5</span><span class="skill">Git / GitHub</span><span class="skill">Clés SSH</span><span class="skill">IntelliJ IDEA</span><span class="skill">VS Code</span><span class="skill">Gradle</span><span class="skill">Pelican</span><span class="skill">Odoo</span>
+<h4><i class="bi bi-diagram-3"></i> Conception</h4>
+<span class="skill">UML (StarUML)</span><span class="skill">Cahier des charges</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
-<h4><i class="bi bi-bug"></i> Qualité logicielle (découverte en stage)</h4>
-<span class="skill">Rapports d'anomalies</span><span class="skill">Priorisation des bugs</span><span class="skill">Chrome / Firefox DevTools</span><span class="skill">Lighthouse</span>
+<h4><i class="bi bi-tools"></i> Outils</h4>
+<span class="skill">Git</span><span class="skill">GitHub</span><span class="skill">Clés SSH</span><span class="skill">IntelliJ IDEA</span><span class="skill">VS Code</span><span class="skill">Gradle</span><span class="skill">Pelican</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-pc-display"></i> Systèmes</h4>
 <span class="skill">Windows</span><span class="skill">Linux (Ubuntu)</span><span class="skill">macOS</span>
+</div></div>
+<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<h4><i class="bi bi-briefcase"></i> Logiciels métiers</h4>
+<span class="skill">Odoo (ERP)</span><span class="skill">Cegid Retail</span><span class="skill">Pack Office</span><span class="skill">Photoshop</span>
+</div></div>
+<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<h4><i class="bi bi-patch-check"></i> Certification</h4>
+<span class="skill">Pix (2022)</span>
+</div></div>
+<div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
+<h4><i class="bi bi-bug"></i> Qualité logicielle (découverte en stage)</h4>
+<span class="skill">Rapports d'anomalies</span><span class="skill">Priorisation des bugs</span><span class="skill">Chrome / Firefox DevTools</span><span class="skill">Lighthouse</span>
 </div></div>
 <div markdown="1" class="col-md-6"><div markdown="1" class="info-card">
 <h4><i class="bi bi-translate"></i> Langues</h4>
